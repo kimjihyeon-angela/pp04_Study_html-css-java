@@ -57,6 +57,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                             <li> dl </li>
                         </ul>
                   </ul>
+              
                 <ol>
                     <li> li태그를 ol태그로 감싸면</li>
                     <li> 번호가 생김 </li>
