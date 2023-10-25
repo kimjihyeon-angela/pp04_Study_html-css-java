@@ -62,7 +62,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     <li> li태그를 ol태그로 감싸면</li>
                     <li> 번호가 생김 </li>
                     <li> 따로 넘버링 하지 않아도 자동으로 번호가 붙음 </li>
-                </ol>
+                </ol> <br> <hr> <br>
                  <ul>
                     <li> li태그를 ul로 감싸면 </li>
                     <li> 번호가 아닌 기호가 생김 </li>
