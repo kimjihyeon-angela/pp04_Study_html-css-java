@@ -82,11 +82,11 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 - title, meta 태그
                 - title : 브라우저 상단
          
-                 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_title.jpg" width="600"/>
+                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_title.jpg" width="600"/>
                                    
                 - meta : 인터넷에 검색 했을 때 밑에 설명 부분
              
-                 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_meta.jpg" width="600"/>
+                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_meta.jpg" width="600"/>
                   
             - <body>영역
 
