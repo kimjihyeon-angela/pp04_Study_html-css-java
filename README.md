@@ -152,18 +152,28 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - class 선택자(중복 가능) : . + class 이름 ex) .container
         - id 선택자(중복 불가) : # + ID ex) #userInfo
 
-- 박스모델
-    - html 태그들은 모두 박스모델로 이루어짐
-    - margin : 박스의 바깥 여백
-    - border : 박스의 기준이 되는 바깥 테두리
-    - padding : 박스의 안쪽 여백
-    - contents : 박스의 내용
+    - 박스모델
+        - html 태그들은 모두 박스모델로 이루어짐
+        - margin : 박스의 바깥 여백
+        - border : 박스의 기준이 되는 바깥 테두리
+        - padding : 박스의 안쪽 여백
+        - contents : 박스의 내용
 
-- 박스모델 화면 표시 방법
-    - border box
-        - 크기 중심이 바깥 테두기(border)
-        - 박스 크기는 디자이너가 준 화면 크기와 일치, 안에 들어가는 contents의 크기가 변함
-    - content box
-        - 크기 중심이 내용(contents)
-        - contents 가 고정되고 border의 크기가 변함
-    - 실무에서는 디자이너에게 받은 화면의 크기와 일치시켜야 하기 때문에 border-box 사용
+    - 박스모델 화면 표시 방법
+        - border box
+            - 크기 중심이 바깥 테두기(border)
+            - 박스 크기는 디자이너가 준 화면 크기와 일치, 안에 들어가는 contents의 크기가 변함
+        - content box
+            - 크기 중심이 내용(contents)
+            - contents 가 고정되고 border의 크기가 변함
+        - 실무에서는 디자이너에게 받은 화면의 크기와 일치시켜야 하기 때문에 border-box 사용
+
+    - 정렬
+        - flex
+            - 핵심 : 여러태그를 하나로 묶어서 정렬
+            - 정렬기준 : 부모박스
+        - position
+            - 박스를 개별적으로 어디에 위치시킬것인지 지정해줌
+            - 옵션 : absolute(절대위치), relative(부모박스 기준으로 상대 위치), fixed(화면 기준으로 절대 위치), static(기본설정)
+        - grid
+

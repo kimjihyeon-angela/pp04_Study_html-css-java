@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>박스모델</title>
+    <style>
+        /* 전체 선택자 */
+        *{
+            box-sizing: border-box;
+        }
+
+        /* 태그 선택자 */
+        div{
+            width: 80px;
+            height: 80px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .pb{
+            width: 500px;
+            height: 500px;
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+        /* 
+            display : flex; 입력할 경우 세로로 정렬되어 있던 박스 1, 2, 3이 가로로 정렬됨
+            flex-direction: row가 기본 설정값이기 때문 => flex-direction:row 생략 가능
+            flex-direction:row 기준 
+                - justify-content : center => 가로 방향으로 중간
+                    - justify-content 기본 설정값 : flex-start
+                    - justify-content: flex-end => 제일 끝쪽으로 감
+                    - justify-content: space-evenly, space-around 등 여러가지가 있음
+                - align-items: center => 세로 방향 중간에 위치하게 됨
+            flex-direction:column(세로방향) 기준
+                - justify-content : center => 세로 방향으로 중간
+                - align-items: center => 가로 방향 중간에 위치하게 됨
+
+         */
+        /* id 선택자 */
+        /* #contentBox{
+            box-sizing: content-box;
+        }
+
+        #borderBox{
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div id="contentBox">박스 1</div>
+    <div>박스 2</div>
+    <div id="borderBox">박스 3</div> -->
+    <!-- 정렬시켜주기 위해 부모 박스가 필요하기 때문에 div 태그로 크게 한번 묶어줌 -->
+    <div class="pb">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <style>
+        .form{
+            width: 670px;
+            height: 960px;
+            border: 1px solid #aacdff;
+            background-color: #ffffff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 7px 7px 39px 0px #0068FF40;
+        }
+
+        .First{
+            color: #0068ff;
+            width: 466px;
+            height: 94px;
+            padding: 50px;
+            /* display: flex; */
+            border: 1px solid red;
+        }
+
+        .Second{
+            width: 466px;
+            height: 80px;
+            border: 1px solid #0068ff;
+        }
+
+        .Gender{
+            width: 140px;
+            height: 23.94px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="First">
+            <div>
+                <h3>회원 가입을 위해 <br> 정보를 입력해주세요</h3></div>
+            </div>
+        <div class="Second">
+            <div >
+                *이메일
+                <input type="text">
+            </div><br>
+            <div class="Second"></div><br>
+            <div class="Second"></div><br>
+            <div class="Second"></div><br>
+        </div>
+
+        <div class="Gender">
+            <input type="radio" name="gender"> 여성
+            <input type="radio" name="gender"> 남성
+        </div>
+    </div>
+</body>
+</html>
