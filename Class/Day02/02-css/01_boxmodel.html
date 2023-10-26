@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>박스모델</title>
+    <style>
+        /* 전체 선택자 */
+        /* *{
+            box-sizing: border-box;
+        } */
+
+        /* 태그 선택자 */
+        div{
+            width: 80px;
+            height: 80;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        /* id 선택자 */
+        #contentBox{
+            box-sizing: content-box;
+        }
+
+        #borderBox{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="contentBox">박스 1</div>
+    <div>박스 2</div>
+    <!-- CSS 기본 box-sizing 설정값 : content box로 박스1, 박스2의 사이즈가 같음 -->
+    <div id="borderBox">박스 3</div>
+</body>
+</html>
+<!-- 
+    box sizing 속성 : 요소의 전체 너비와 높이를 어떻게 계산하는지 설정 => 요소마다 너비와 높이를 늘리거나 죽이고, padding을 추가할 경우 너비와 높이에 어떻게 작용되는지 여부 설정
+    box-sizing : content-box
+        - 지정한 CSS width 및 height를 컨텐츠 영역에만 적용
+        - border, padding, margin은 따로 계산되어 전체 영역이 설정값보다 커질 수 있음
+    box-sizing : border-box
+        - 지정한 CSS width 및 height를 전체 영역에 적용
+        - border, padding, margin이 모두 합산되어 계산
+    ex 1) <div> 태그의 영역 크기를 100px로 설정한 경우
+        - <div> 크기를 100px로 딱 맞추고 싶은 경우 : box-sizing : border-box
+        - <div>의 컨텐츠 영역만 100px로 맞추고 싶은 경우 : box-sizing: content-box
+    ex 2) padding:0, margin:0, border:5px, width:100px, height:100px의 경우
+        - content-box
+            - 전체 width : 5 + 100 + 5 = 110px
+            - 전체 height : 5 + 100 + 5 = 110px
+            - content width : 100 px
+            - content height : 100 px
+        - border-box
+            - 전체 width : 100px
+            - 전체 height : 100px
+            - content width : 100 - 5 - 5 = 90px
+            - content height : 100 - 5 - 5 = 90px
+-->

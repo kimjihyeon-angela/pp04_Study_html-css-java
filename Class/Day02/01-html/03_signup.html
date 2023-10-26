@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title> 회원가입 </title>
+    <style>
+        .pw {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h2> 회원가입 </h2>
+    <input type="text" placeholder="이메일을 입력해 주세요" style="border: 1px solid red;"> <br><br>
+    <input type="text" placeholder="이름을 입력해 주세요"> <br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 입력해 주세요"> <br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 다시 입력해 주세요"> <br><br>
+    <select>
+        <option disabled="true" selected="true"> 지역을 선택하세요 </option> <!-- disabled => 선택 불가하게 만들어 주는 속성, selected => 이미 선택된것 처럼 만들어주는 속성-->
+        <option> 서울 </option>
+        <option> 경기 </option>
+        <option> 인천 </option>
+    </select>
+    <br> <br>
+    <input type="radio" name="gender"> 여성 <!-- input태그 => self closing 태그로 태그 하나만 입력하면 됨 -->
+    <input type="radio" name="gender"> 남성 <!-- 같은 name을 사용하여 링크해주고 둘 중에 하나의 버튼만 선택될 수 있도록 만듦 -->
+    <br> <br>
+    <input type="checkbox"> 이용약관 개인정보 수집 및 동의합니다
+    <hr>
+    <button> 가입하기 </button> 
+    <input type="button" value ="가입하기"> <!-- 버튼태그 생기기 전에 사용하던 방법, 버튼을 꾸미기 어려워져 button 태그가 생김-->
+    <!-- 주석처리 = ctrl + ? -->
+    <!-- 
+        html 코드에 직접 css 속성 바로 입력하기 : 이메일을 입력해주세요 뒤에 style 넣는 방법
+        head에 클래스 선택자를 활용하여 입력하기
+            - 비밀번호 두군데 class="pw" 설정해주기
+            - head 부분에서 style 추가해주기
+            - 클래스 선택자이기 때문에 .pw {}로 스타일 지정
+    -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title> 회원가입 </title>
+    <link href="./04_sinup.css" rel="stylesheet">
+</head>
+<body>
+    <h2> 회원가입 </h2>
+    <input type="text" placeholder="이메일을 입력해 주세요"> <br><br>
+    <input type="text" placeholder="이름을 입력해 주세요"> <br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 입력해 주세요"> <br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 다시 입력해 주세요"> <br><br>
+    <select>
+        <option disabled="true" selected="true"> 지역을 선택하세요 </option> <!-- disabled => 선택 불가하게 만들어 주는 속성, selected => 이미 선택된것 처럼 만들어주는 속성-->
+        <option> 서울 </option>
+        <option> 경기 </option>
+        <option> 인천 </option>
+    </select>
+    <br> <br>
+    <input type="radio" name="gender"> 여성 <!-- input태그 => self closing 태그로 태그 하나만 입력하면 됨 -->
+    <input type="radio" name="gender"> 남성 <!-- 같은 name을 사용하여 링크해주고 둘 중에 하나의 버튼만 선택될 수 있도록 만듦 -->
+    <br> <br>
+    <input type="checkbox"> 이용약관 개인정보 수집 및 동의합니다
+    <hr>
+    <button> 가입하기 </button> 
+    <input type="button" value ="가입하기"> <!-- 버튼태그 생기기 전에 사용하던 방법, 버튼을 꾸미기 어려워져 button 태그가 생김-->
+    <!-- 주석처리 = ctrl + ? -->
+    <!-- 
+        css 파일을 따로 저장한 경우
+        css 파일 생성 후 원하는 스타일 선택자로 입력
+        head 부분에서 link 태그 활용
+        link 속성으로 href, rel 사용
+        href="./"입력 하면 연결할 파일 목록이 뜸
+        rel="stylesheet"입력
+    -->
+</body>
+</html>
