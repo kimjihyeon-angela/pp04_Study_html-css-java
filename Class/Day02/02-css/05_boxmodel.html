@@ -11,7 +11,7 @@
         /* 태그 선택자 */
         div{
             width: 80px;
-            height: 80;
+            height: 80px;
             border: 1px solid red;
             padding: 10px;
         }
@@ -28,9 +28,11 @@
 </head>
 <body>
     <div id="contentBox">박스 1</div>
+    <!-- box의 width, height가 80px로 설정되는 것 x -->
     <div>박스 2</div>
     <!-- CSS 기본 box-sizing 설정값 : content box로 박스1, 박스2의 사이즈가 같음 -->
     <div id="borderBox">박스 3</div>
+    <!-- box의 width, height 가 80px로 설정됨 -->
 </body>
 </html>
 <!-- 
