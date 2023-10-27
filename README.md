@@ -183,6 +183,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 ## Day 03
 - 회원가입 화면 만들어 보기
+
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
 
     [회원가입 화면]
