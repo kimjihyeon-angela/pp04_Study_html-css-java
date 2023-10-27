@@ -83,10 +83,14 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 - title : 브라우저 상단
          
                 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_title.jpg" width="600"/>
+
+                [head - title]
                                    
                 - meta : 인터넷에 검색 했을 때 밑에 설명 부분
              
                 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/head_meta.jpg" width="600"/>
+
+                [head - meta]
                   
             - <body>영역
 
@@ -178,5 +182,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - grid
 
 ## Day 03
-- 회원가입 화면 만들어 보기 완성
+- 회원가입 화면 만들어 보기
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
+
+    [회원가입 화면]
