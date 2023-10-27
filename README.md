@@ -182,13 +182,15 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - grid
 
 ## Day 03
-- 회원가입 화면 만들어 보기
+- 회원가입 화면 만들어 보기 (08_signup)
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
 
     [회원가입 화면]
     
     - br을 활용한 회원가입화면이기 때문에 다시 도전해보기 
+
+- 회원가입화면 만들어 보기 (09_signup.html + 09_signup.css)
 
 - 싸이월드 화면 만들어보기
 

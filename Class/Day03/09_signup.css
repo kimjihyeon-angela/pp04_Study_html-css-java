@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    /* 위, 왼쪽의 공백을 없앨 수 있음 */
+}
+
+.form{
+    width: 670px;
+    height: 960px;
+    border: 1px solid #aacdff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    color: #0068ff;
+    width: 466px;
+    height: 94px;
+}
