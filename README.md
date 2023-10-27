@@ -172,7 +172,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - contents 가 고정되고 border의 크기가 변함
         - 실무에서는 디자이너에게 받은 화면의 크기와 일치시켜야 하기 때문에 border-box 사용
 
-    - 정렬
+    - 정렬    
         - flex
             - 핵심 : 여러태그를 하나로 묶어서 정렬
             - 정렬기준 : 부모박스
@@ -187,3 +187,15 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
 
     [회원가입 화면]
+
+- 싸이월드 화면 만들어보기
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld1.jpg" width="600"/>
+
+    [싸이월드 화면]
+
+    - background 설정 방법
+    - outerbox 설정
+    - 화면을 만들때
+        - 하나하나 div로 다 나눠서 class 지정해줘야함
+        - br 사용보다 div로 나눠 css에서 디자인해주기
