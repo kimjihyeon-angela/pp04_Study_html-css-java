@@ -187,6 +187,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
 
     [회원가입 화면]
+    
+    - br을 활용한 회원가입화면이기 때문에 다시 도전해보기 
 
 - 싸이월드 화면 만들어보기
 
