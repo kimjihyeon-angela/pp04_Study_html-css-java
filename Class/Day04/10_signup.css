@@ -7,6 +7,9 @@
     align-items: center;
     
 } */
+.background{
+    background-color: aqua;
+}
 
 .form{
     width: 670px;
