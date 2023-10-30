@@ -258,3 +258,10 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 서버와의 통신 내역을 보여주는 도구
     - 성능 (Audits)
         - 웹 어플리케이션의 성능을 향상시킬 방법을 컨설팅해주는 도구
+
+- 회원가입 화면 만들어 보기 (12_signup)
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup2.jpg" width="600"/>
+
+    [회원가입 화면]
+
