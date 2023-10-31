@@ -381,13 +381,43 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             for (let i = 0; i < 5; i + i +1;) {
                 console.log("hello")
             }
+
+            => 반복 (i를 0부터 시작; i가 5보다 작을때까지만; 한번 반복할 때마다 i에 1을 더함;){
+                콘솔에 로그를 남김("안녕")
+            }
     - 초기식 : 반복문의 시작점을 만들어 주는 것
         - let i = 0
         - i의 시작점 0 을 알려주는 것임
+        - const 사용 불가 => i = i + 1이 불가능 하기 때문
     - 조건식 : 반복문의 끝점을 알려주는 것
         - i < 5
     - 증감문 : 카운트를 어떻게 할 것인가
-        - i = i + 1
+        - i = i + 1 / i++(이렇게 써도 됨)
+    - 변수명은 꼭 i가 아니어도 상관없음
+    - 특정조건 만족 시
+        - 조건식을 통한 정상종료 이전에도 종료(break)가능
+        - 명령문을 실행하지 않고 다음 반복으로 건너뛰기(continue) 가능
+
+- 수학객체
+    - 자바스크립트의 수학 기능을 사용하는 명령어
+    - 최대값 구하기 : Math.max()
+    - 최소값 구하기 : Math.min()
+    - 0 ~ 1 랜덤 수 생성 : Math.random()
+    - 반올림 : Math.round()
+    - 올림 : Math.ceil()
+    - 버림 : Math.floor()
+
+- DOM
+    - Document Object Model 의 줄임말
+    - html => tag로 구성 => tag : 약속된 명령어
+    - 웹브라우저가 정적인 웹페이지를 변경하거나 조작하기 위해 HTML 파일을 자바스크립트 객체로 만들어줌
+    - html과 javascript가 서로 상호작용하며 동적인 작동 가능하게 만듦
+
+        document.getElementByld("tagID").InnerText
+
+        => HTML 파일에서 "tgID"라는 id를 가진 태그를 선택해서 제어함
+
+
 - 싸이월드 화면 만들어보기
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld2.jpg" width="600"/>
