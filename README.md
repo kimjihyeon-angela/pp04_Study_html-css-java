@@ -378,7 +378,16 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 반복해서 실행할 내용
             }
 
-
+            for (let i = 0; i < 5; i + i +1;) {
+                console.log("hello")
+            }
+    - 초기식 : 반복문의 시작점을 만들어 주는 것
+        - let i = 0
+        - i의 시작점 0 을 알려주는 것임
+    - 조건식 : 반복문의 끝점을 알려주는 것
+        - i < 5
+    - 증감문 : 카운트를 어떻게 할 것인가
+        - i = i + 1
 - 싸이월드 화면 만들어보기
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld2.jpg" width="600"/>
