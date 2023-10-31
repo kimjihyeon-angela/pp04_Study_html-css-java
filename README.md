@@ -426,3 +426,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     - iframe 태그 활용하여 다른 html과 css 연결시킴
     - iframe 태그를 이용하여 다른 화면을 띄울 수 있음
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld3.jpg" width="600"/>
+
+    [싸이월드 화면]
