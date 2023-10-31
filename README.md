@@ -260,8 +260,50 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 웹 어플리케이션의 성능을 향상시킬 방법을 컨설팅해주는 도구
 
 - 회원가입 화면 만들어 보기 (12_signup)
+    - css 연결 안하고 스타일 적용 안된다고 하고 있었음
+    - link, rel 제대로 연결해주기
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup2.jpg" width="600"/>
 
     [회원가입 화면]
 
+## Day 05
+- 객체
+    - 중괄호 안에 데이터를 넣고 쉼표로 각 데이터를 구분함
+
+        const profile = {
+            name: "홍길동",
+            age: 50,
+            height: 164,
+        }
+
+    - key - value Pair
+        - key = name, age, height
+        - value(값) = 홍길동, 50, 164
+        - 값은 비어있을 수 있음
+    - 빈객체, 숫자값, 문자열 값을 넣은 객체를 생성할 수 있음
+    - 객체에 담긴 값을 가져오는 방법
+        - 변수명.key (주로사용)
+        - 변수명["key"]
+        
+            const profile = {
+                name: "홍길동",
+                age : 49,
+                height: ,
+                school: "코드중학교",
+            }
+            profile.name => "홍길동"
+            profile["school"] => "코드중학교"
+
+- 배열안에 객체를 담을 수 있음
+
+    let students=[
+        {name:"길동", pet:"강아지", house:"구로구"},
+        {name:"철수", pet:"고양이", house:"관악구"},
+        {name:"다희", pet:"미어캣", house:"강서구"}
+    ]
+
+    students[0]
+    => {name:"길동", pet:"강아지", house:"구로구"}
+
+    students[0].name => "길동"
