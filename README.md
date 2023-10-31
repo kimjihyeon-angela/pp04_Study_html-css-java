@@ -286,24 +286,24 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 변수명.key (주로사용)
         - 변수명["key"]
         
-            const profile = {
-                name: "홍길동",
-                age : 49,
-                height: ,
-                school: "코드중학교",
-            }
-            profile.name => "홍길동"
-            profile["school"] => "코드중학교"
+                const profile = {
+                    name: "홍길동",
+                    age : 49,
+                    height: ,
+                    school: "코드중학교",
+                }
+                profile.name => "홍길동"
+                profile["school"] => "코드중학교"
 
 - 배열안에 객체를 담을 수 있음
 
-    let students=[
-        {name:"길동", pet:"강아지", house:"구로구"},
-        {name:"철수", pet:"고양이", house:"관악구"},
-        {name:"다희", pet:"미어캣", house:"강서구"}
-    ]
+        let students=[
+            {name:"길동", pet:"강아지", house:"구로구"},
+            {name:"철수", pet:"고양이", house:"관악구"},
+            {name:"다희", pet:"미어캣", house:"강서구"}
+        ]
 
-    students[0]
-    => {name:"길동", pet:"강아지", house:"구로구"}
+        students[0]
+        => {name:"길동", pet:"강아지", house:"구로구"}
 
-    students[0].name => "길동"
+        students[0].name => "길동"
