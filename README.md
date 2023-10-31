@@ -413,9 +413,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 웹브라우저가 정적인 웹페이지를 변경하거나 조작하기 위해 HTML 파일을 자바스크립트 객체로 만들어줌
     - html과 javascript가 서로 상호작용하며 동적인 작동 가능하게 만듦
 
-        document.getElementByld("tagID").InnerText
+            document.getElementByld("tagID").InnerText
 
-        => HTML 파일에서 "tgID"라는 id를 가진 태그를 선택해서 제어함
+            => HTML 파일에서 "tgID"라는 id를 가진 태그를 선택해서 제어함
 
 
 - 싸이월드 화면 만들어보기
