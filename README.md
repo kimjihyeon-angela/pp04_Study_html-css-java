@@ -307,3 +307,12 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         => {name:"길동", pet:"강아지", house:"구로구"}
 
         students[0].name => "길동"
+
+- 싸이월드 화면 만들어보기
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld2.jpg" width="600"/>
+
+    [싸이월드 화면]
+
+    - iframe 태그 활용하여 다른 html과 css 연결시킴
+    - iframe 태그를 이용하여 다른 화면을 띄울 수 있음
