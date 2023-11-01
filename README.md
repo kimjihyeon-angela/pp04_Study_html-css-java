@@ -430,3 +430,29 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld3.jpg" width="600"/>
 
     [싸이월드 화면]
+
+## Day 06
+- 함수
+    - 우리가 직접 만드는 기능
+    
+            function hello(){
+                alert("안녕하세요")
+            }
+    - function 함수이름(매개변수) {함수를 호출했을 때 실행할 명령문}
+    - 매개변수: Optional (함수안에서 사용해야함)
+    - 데이터 반환 : return문
+    - return문 
+        - Optional
+        - 결과값이 반환되어 나옴 (콘솔로그의 경우 결과값 반환되어 나오지 않음, 실제로 작동하는 것 x)
+    
+            function hello(name){
+                alert(name+"님 안녕하세요")
+            }
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/function1.jpg" width="600"/>
+
+    [function hello(name)의 결과화면]
+
+
+- 내장함수
+    - 
