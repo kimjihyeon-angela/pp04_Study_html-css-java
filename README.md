@@ -453,6 +453,23 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     [function hello(name)의 결과화면]
 
+    - 함수 작성방법
+        - 함수 선언식
 
+                    function hello(name){
+                        alert(name + "님 안녕하세요")
+                    }
+
+        - 함수 표현식
+        
+                    const hello = function(name){
+                        alert(name + "님 안녕하세요")
+                    }
+
+        - 화살표 함수
+
+                    const hello = (name) => {
+                        alert(name + "님 안녕하세요")
+                    }
 - 내장함수
     - 
