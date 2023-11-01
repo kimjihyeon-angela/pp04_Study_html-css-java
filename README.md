@@ -445,9 +445,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - Optional
         - 결과값이 반환되어 나옴 (콘솔로그의 경우 결과값 반환되어 나오지 않음, 실제로 작동하는 것 x)
     
-            function hello(name){
-                alert(name+"님 안녕하세요")
-            }
+                function hello(name){
+                    alert(name+"님 안녕하세요")
+                }
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/function1.jpg" width="600"/>
 
