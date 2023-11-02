@@ -478,10 +478,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 자주 사용되는 함수를 자바스크립트에 내장하여 편리하게 이용할 수 있도록 한 것
     - 많이 사용되는 내장 함수
         - 시간 지연 함수 (시간 입력 시 ms 단위로 입력)
+
+
                 setTmeout(func, time)
 
-    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setTimeout.mp4" width="400"/>
+            <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setTimeout.mp4" width="400"/>
 
         - 시간 반복 함수 (시간 입력 시 ms 단위로 입력)
+
                 setInterval(func, time)
         
