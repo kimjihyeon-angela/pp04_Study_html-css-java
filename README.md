@@ -487,5 +487,11 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 시간 반복 함수 (시간 입력 시 ms 단위로 입력)
 
                 setInterval(func, time)
-        
-        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setInternal.gif" width="400"/>
+
+            <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setInternal.gif" width="400"/>
+            
+            [1초가 지났습니다가 계속 출력됨]
+
+            <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/timer.gif" width="400"/>
+            
+            [조건문을 활용하여 10초에서 0초까지 출력되는 타이머 만들기]
