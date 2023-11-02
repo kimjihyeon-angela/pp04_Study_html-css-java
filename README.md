@@ -471,5 +471,17 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     const hello = (name) => {
                         alert(name + "님 안녕하세요")
                     }
+        
+        - 작성방법이 모두 다르지만 실행방법은 모두 동일함
+
 - 내장함수
-    - 
+    - 자주 사용되는 함수를 자바스크립트에 내장하여 편리하게 이용할 수 있도록 한 것
+    - 많이 사용되는 내장 함수
+        - 시간 지연 함수 (시간 입력 시 ms 단위로 입력)
+                setTmeout(func, time)
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setTimeout.mp4" width="400"/>
+
+        - 시간 반복 함수 (시간 입력 시 ms 단위로 입력)
+                setInterval(func, time)
+        
