@@ -479,7 +479,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 많이 사용되는 내장 함수
         - 시간 지연 함수 (시간 입력 시 ms 단위로 입력)
 
-
                 setTmeout(func, time)
 
             <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/setTimeout.gif" width="400"/>
@@ -495,3 +494,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/timer.gif" width="400"/>
             
             [조건문을 활용하여 10초에서 0초까지 출력되는 타이머 만들기]
+
+- 싸이월드 만들기
+    -     
