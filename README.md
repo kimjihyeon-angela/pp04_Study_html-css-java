@@ -496,4 +496,15 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             [조건문을 활용하여 10초에서 0초까지 출력되는 타이머 만들기]
 
 - 싸이월드 만들기
-    -     
+    - 추억의 BGM 화면 만들기
+    - 미완성
+
+## Day 07
+- 싸이월드 만들기
+    - Day 06에서 미완성한 추억의 BGM 화면 만들기
+    - 사진 다시 다운받은 후 이름, 가수 넣어줌
+    - 테이블 만들기
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld4.jpg" width="600"/>
+
+    [싸이월드 화면]
