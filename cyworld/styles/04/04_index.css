@@ -1,0 +1,171 @@
+/* Cyworld 2 */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    /* 위, 왼쪽의 공백을 없앨 수 있음 */
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    padding: 20px 0px 0px 20px;
+    background-image: url("../../images/background.png");
+    /* background-color:  bisque; 
+    확인용으로 색칠 */
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../../images/outerbox.png");
+    /* background-color: tomato; */
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__left__header{
+    width: 100%;
+    height: 30px;
+    /* % : 상대단위로 부모박스의 비율을 가지고 와서 적용함 => width가 wrapper__left__header의 부모인 wrapper__left의 width인 208px을 따라감을 의미함 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.today{
+    font-size: 9px;
+}
+
+.wrapper__left__body{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.left__body__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line{
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+}
+
+.left__body__profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile__detail{
+    display: flex;
+    flex-direction: row;
+    color: #999999;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.fas{
+    color: black;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+}
+
+.left__body__footer{
+    width: 141px;
+    height: 41px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    /* background-color: black; */
+}
+
+.footer__feel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.feel__title{
+    color: gray;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.feel__selection{
+    color: gray;
+    font-size: 10px;
+}
+
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5px;
+    /* background-color: violet; */
+}
+
+.wrapper__right__header{
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 14px;
+}
+
+.right__header__title, .right__header__setting{
+    color: #55b2e4;
+    font-size: 9px;;
+}
+
+.right__header__title{
+    font-size: 16px;
+}
+
+.wrapper__right__body{
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}

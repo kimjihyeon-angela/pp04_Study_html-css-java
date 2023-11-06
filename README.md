@@ -508,3 +508,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld4.jpg" width="600"/>
 
     [싸이월드 화면]
+
+## Day 08
+- setInterval, clearInterval에 대한 공부가 조금 더 필요함
+- 이벤트 감지
+    - ex) 회원가입 화면에서 이메일, 비밀번호, 비밀번호 확인을 다 입력해야 회원가입 버튼 활성화되는 것
