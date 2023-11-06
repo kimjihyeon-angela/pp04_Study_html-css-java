@@ -520,6 +520,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 - 싸이월드 만들기 마무리
     - 그동안 만들었던 화면들 해당 버튼 클릭 시 이동할 수있도록 만듦
+
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld5.gif" width="600"/>
 
 ## Day 09
