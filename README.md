@@ -512,4 +512,15 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 ## Day 08
 - setInterval, clearInterval에 대한 공부가 조금 더 필요함
 - 이벤트 감지
-    - ex) 회원가입 화면에서 이메일, 비밀번호, 비밀번호 확인을 다 입력해야 회원가입 버튼 활성화되는 것
+    - ex1) 회원가입 화면에서 이메일, 비밀번호, 비밀번호 확인을 다 입력해야 회원가입 버튼 활성화되는 것
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/event1.jpg" width="600"/>
+
+    - ex2) 전화번호 입력 시 자동으로 다음 탭으로 넘어가지는 것
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/event2.jpg" width="600"/>
+
+- 싸이월드 만들기 마무리
+    - 그동안 만들었던 화면들 해당 버튼 클릭 시 이동할 수있도록 만듦
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld5.jpg" width="600"/>
+
+## Day 09
+- Final Project
