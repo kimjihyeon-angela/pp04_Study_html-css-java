@@ -529,3 +529,10 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/finalProject1.jpg" width="400"/>
    
     [디자인 화면]
+
+## Day 10
+- Final Project
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/finalProject.gif" width="600"/>
+   
+    [구동 화면]

@@ -143,7 +143,8 @@
 
 .gender{
     /* border: 1px solid red; */
-    margin-right: 15px;
+    padding: 10px;
+    /* margin-right: 15px; */
 }
 
 .dividedLine{
