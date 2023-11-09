@@ -611,7 +611,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 property: value
             }
 
-            [예시]
+    [예시]
     
             <div>
                 <h1>제목입니다.</h1>
@@ -630,4 +630,107 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             p{
                 color: blue;
             }
+    
+    - id 선택자
 
+            #id{
+                property: value;
+            }
+
+    [예시]
+
+            <body> 
+                <div>
+                    <h1 id="title">제목입니다</h1>
+                    <p>내용입니다.</p>
+                </div>
+            </body>
+
+            #title{
+                font-size: 28px;
+                color: red;
+            }
+        
+    - class 선택자
+        - 여러개의 요소에 중복 지정 가능
+
+                .class{
+                    property: value
+                }
+
+    [예시]
+
+                <body>      
+                    <div>
+                        <h1 id="title">제목입니다.</h1>
+                        <p class="contents">내용입니다.</p>
+                    </div>
+                </body>
+
+                .contents{
+                    color: blue;
+                }
+
+    - 자손 선택자
+
+            <body>      
+                <div>
+                    <h1 id="title">제목입니다.</h1>
+                    <p class="contents">내용입니다.</p>
+                </div>
+            </body>
+        
+        - div : 부모요소
+        - h1, p : 자식요소1, 2
+
+            .parent .child{
+                property: value
+            }
+    
+    [예시]
+
+            <body>
+                <h1 class="title">전체 제목입니다.</h1>
+                <div class="box1">
+                    <h1 class="title">제목입니다.</h1>
+                    <p class="contents">내용입니다.</p>
+                </div>
+                <div class="box2">
+                    <p class="text1">글 내용입니다. 1</p>
+                    <p class="text2">글 내용입니다. 2</p>
+                </div>
+            </body>
+
+            .box1 .title{
+                color: yellow;
+            }
+
+            .box2 .text1{
+                color: green
+            }
+
+    - 다중선택자
+
+
+            .class#id{
+                property: value;
+            }
+
+    [예시]
+            <body>
+                <h1 class="title">전체 제목입니다.</h1>
+                <div class="box1">
+                    <h1 class="title" id="headline">제목입니다.</h1>
+                    <p class="contents">내용입니다.</p>
+                </div>
+                <div class="box2">
+                    <p class="text1">글 내용입니다. 1</p>
+                    <p class="text2">글 내용입니다. 2</p>
+                </div>
+            </body>
+
+            .title#headline{
+                color: violet
+            }
+
+        - title 클래스와, headline아이디를 가진 경우
