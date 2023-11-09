@@ -562,7 +562,40 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 선택자 { 선언 = 속성(property) : 속성값(property value) }
 - CSS 적용 방식
     - 인라인(in-line)방식
-    - style 태그 이용
-    - 분리된 CSS파일 연결
+        - 속성을 적용할 HTML 태그에 직접 CSS를 입력해주는 방식
 
+                <div style="background-color: red;">DIV입니다.</div>
+        - css가 길어질 수록 가독성이 떨어지고, 유지보수가 어렵다는 단점이 있음
+        - 실무에서 거의 사용 x
+
+    - style 태그 이용
+        - html 문서 head 내에 style 태그를 사용함
+
+                <!DOCTYPE html>
+                <html lang="ko">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+                    <title> 1일차 수업</title>
+                    <style>
+                        div{
+                            background-color: red;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <div> DIV 입니다. </div>
+                </body>
+                </html>
+
+    - 분리된 CSS파일 연결
+        - HTML 파일, CSS파일 따로 만든뒤 link 태그를 이용해 연결해주는 방식
+
+                <link rel="stylesheet" href="./index.css">
+
+        - rel : 해당 태그로 연결시켜줄 파일과 어떤 관계인지 지정
+        - href: 연결할 파일의 경로를 지정
+        - 확장자명에 .html, .css를 꼭 작성해줘야함
 
