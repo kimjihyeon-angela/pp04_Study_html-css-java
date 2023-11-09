@@ -546,9 +546,11 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 - 웹 브라우저란?
     - 인터넷 통신을 할 수 있는 프로그램
     - ex) 크롬, 파이어폭스, 사파리, 엣지 등등
+
 - CSS란?
     - Cascading Style Sheet
     - 웹 페이지의 스타일 & 레이아웃을 담당하는 문서
+
 - CSS 기본용법
 
         <div> DIV 입니다.</div>
@@ -560,7 +562,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         [CSS소스]
 
     - 선택자 { 선언 = 속성(property) : 속성값(property value) }
-- CSS 적용 방식
+
+- CSS 적용 방식 : 인라인 방식, style태그 이용, 분리된 css 파일 연결
     - 인라인(in-line)방식
         - 속성을 적용할 HTML 태그에 직접 CSS를 입력해주는 방식
 
@@ -595,7 +598,36 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 <link rel="stylesheet" href="./index.css">
 
-        - rel : 해당 태그로 연결시켜줄 파일과 어떤 관계인지 지정
+        - rel : 해당 태그로 연결시켜줄 파일과 어떤 관계인지 지정 (relation)
         - href: 연결할 파일의 경로를 지정
         - 확장자명에 .html, .css를 꼭 작성해줘야함
+        - 실무에서 가장 많이 활용하는 방식
+        - 유지보수가 편리하고 소스코드를 관리하기 좋음
+
+- 선택자
+    - 태그 선택자
+    
+            tag{
+                property: value
+            }
+
+            [예시]
+    
+            <div>
+                <h1>제목입니다.</h1>
+                <p>내용입니다.</p>
+            </div>
+
+            div{
+                background-color: #f9f9f9;
+            }
+
+            h1{
+                font-size: 20px;
+                color: red;
+            }
+
+            p{
+                color: blue;
+            }
 
