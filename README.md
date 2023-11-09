@@ -717,6 +717,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             }
 
     [예시]
+    
             <body>
                 <h1 class="title">전체 제목입니다.</h1>
                 <div class="box1">
