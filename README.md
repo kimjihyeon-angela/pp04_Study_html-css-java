@@ -1,7 +1,9 @@
 # pp04_Study_html-css-javaScript
 HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
-## Day 01
+## Class 1 html, css, javascript에 대한 기초
+
+### Day 01
 - html
     - Hyper Text Markup Language
     - 네트워크가 연결된 웹페이지에서 문서를 작성하고, 읽고, 공유하기 위해 만들어진 체계로 구조를 담당 
@@ -97,7 +99,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 - css : 시각
 - JavaScript : 기능
 
-## Day 02
+### Day 02
 - css
     - HTML의 색, 크기, 정렬 등을 변경하여 꾸며주는 언어
     - 기본문법
@@ -181,7 +183,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - 옵션 : absolute(절대위치), relative(부모박스 기준으로 상대 위치), fixed(화면 기준으로 절대 위치), static(기본설정)
         - grid
 
-## Day 03
+### Day 03
 - 회원가입 화면 만들어 보기 (08_signup)
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/signup1.jpg" width="600"/>
@@ -204,7 +206,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 하나하나 div로 다 나눠서 class 지정해줘야함
         - br 사용보다 div로 나눠 css에서 디자인해주기
 
-## Day 04
+### Day 04
 - html
     - tag : 약속된 명령어
     - 브라우저 화면의 뼈대
@@ -267,7 +269,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     [회원가입 화면]
 
-## Day 05
+### Day 05
 - 객체
     - 중괄호 안에 데이터를 넣고 쉼표로 각 데이터를 구분함
 
@@ -431,7 +433,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     [싸이월드 화면]
 
-## Day 06
+### Day 06
 - 함수
     - 우리가 직접 만드는 기능
     
@@ -499,7 +501,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 추억의 BGM 화면 만들기
     - 미완성
 
-## Day 07
+### Day 07
 - 싸이월드 만들기
     - Day 06에서 미완성한 추억의 BGM 화면 만들기
     - 사진 다시 다운받은 후 이름, 가수 넣어줌
@@ -509,7 +511,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     [싸이월드 화면]
 
-## Day 08
+### Day 08
 - setInterval, clearInterval에 대한 공부가 조금 더 필요함
 - 이벤트 감지
     - ex1) 회원가입 화면에서 이메일, 비밀번호, 비밀번호 확인을 다 입력해야 회원가입 버튼 활성화되는 것
@@ -523,16 +525,44 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cyworld5.gif" width="600"/>
 
-## Day 09
+### Day 09
 - Final Project
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/finalProject1.jpg" width="400"/>
    
     [디자인 화면]
 
-## Day 10
+### Day 10
 - Final Project
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/finalProject.gif" width="600"/>
    
     [구동 화면]
+
+
+## Class 02 CSS 기초
+
+### Day 01
+- 웹 브라우저란?
+    - 인터넷 통신을 할 수 있는 프로그램
+    - ex) 크롬, 파이어폭스, 사파리, 엣지 등등
+- CSS란?
+    - Cascading Style Sheet
+    - 웹 페이지의 스타일 & 레이아웃을 담당하는 문서
+- CSS 기본용법
+
+        <div> DIV 입니다.</div>
+        [HTML 소스]
+
+        div{
+            background: red;
+        }
+        [CSS소스]
+
+    - 선택자 { 선언 = 속성(property) : 속성값(property value) }
+- CSS 적용 방식
+    - 인라인(in-line)방식
+    - style 태그 이용
+    - 분리된 CSS파일 연결
+
+
