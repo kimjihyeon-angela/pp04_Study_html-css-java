@@ -736,4 +736,50 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             }
 
 ### Day 02
+- 에밋?
+    - h1 태그 입력 방법
+        - h1 입력 후 탭 선택 시 자동 완성 됨
 
+                <h1> </h1>
+    - title이라는 class, headline이라는 id를 가진 h1 태그를 생성하고 싶을 때
+        - h1.title#headline 입력 후 탭 클릭 시 자동 완성 됨
+
+                <h1 class="title" id="headline"></h1>
+            
+
+    - contents라는 class를 가진 p 태그 생성 시
+        - p.contents 입력 후 탭 클릭 시 자동 완성 됨
+
+                <p class="contents">내용입니다.</p>
+
+- 폰트 기본 스타일
+    - font 기본 속성
+        - font-size : 글자 사이즈
+        - font-weight : 글자 두께
+        - font-style : 글자 기울임
+        - text-decoration: 글자 꾸밈(밑줄, 취소선 등)
+        - color: 글자 색
+
+- 박스모델
+    - 웹브라우저에서 HTML Element(요소)를 구성할 때 각각의 요소가 차지하는 박스 공간을 정의한 모델
+    - 모든 HTML 요소는 박스 형태로 되어 있음 => 이러한 박스 형태 = 박스 모델임
+
+- box-sizing 속성
+    - content-box
+        - content 영역을 기준으로 box의 size 적용
+        - 기본값
+    - border-box
+        - border 영역을 기준으로 box의 size 적용
+
+- inline 요소 vs Block 요소
+    - block 요소
+        - 블록요소를 여러개 연속해서 쌓을 경우, 자동으로 다음줄로 넘어감
+        - 좌/우 양쪽으로 늘어나 부모 요소의 너비를 가득 채움
+        - ex) div, p, u, dl, h1, h2, h3, 등등
+    - inline 요소
+        - 여러개의 ㅇ소를 연속해서 입력해도 자동으로 다음줄로 넘어가지 않음
+        - 태그에 할당된 공간 만큼의 너비만 차지함
+        - ex) span, a, img, strong, em, input, button, textarea, select, 등등
+
+- 실습
+    - 일기장 만들기

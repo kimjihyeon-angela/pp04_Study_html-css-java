@@ -1,0 +1,23 @@
+.title{
+    color: red;
+}
+
+.box1 .title{
+    color: yellowgreen;
+}
+
+.title#headline{
+    color: violet;
+}
+
+.contents{
+    font-size: 28px;
+    font-style: italic;
+    /* font-style: normal; */
+    text-decoration: underline;
+    font-weight: bold;
+    /* 
+        font-weight -> 보통 400
+        숫자가 커질수록 굵어짐
+     */
+}
