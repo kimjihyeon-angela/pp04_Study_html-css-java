@@ -783,3 +783,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 - 실습
     - 일기장 만들기
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/mydiary1.jpg" width="600"/>
+
+
+
+### Day 03
+- 실습
+    - 일기장 만들기 마무리
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/mydiary2.jpg" width="600"/>
+
+
