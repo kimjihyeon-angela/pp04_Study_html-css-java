@@ -777,7 +777,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 좌/우 양쪽으로 늘어나 부모 요소의 너비를 가득 채움
         - ex) div, p, u, dl, h1, h2, h3, 등등
     - inline 요소
-        - 여러개의 ㅇ소를 연속해서 입력해도 자동으로 다음줄로 넘어가지 않음
+        - 여러개의 요소를 연속해서 입력해도 자동으로 다음줄로 넘어가지 않음
         - 태그에 할당된 공간 만큼의 너비만 차지함
         - ex) span, a, img, strong, em, input, button, textarea, select, 등등
 
@@ -793,3 +793,45 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/mydiary2.jpg" width="600"/>
 
 
+### Day 04
+- 레이아웃
+    - 사전적 정의 : 출판 광고 건축 분야 등에서 요소를 효과적으로 배치하는 것
+    - css 레이아웃 : css를 이용하여 단순 문서 형태인 html을 보기 좋게 배치하고 재배열 하는 것, 관련기능, 완성된 배열 등을 포괄적으로 지칭함
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/layout.jpg" width="600"/>
+
+    [레이아웃]
+- 선택자
+    - 전체선택자
+        - html에서의 모든 요소를 선택하는 것
+
+                *{
+                    property: value
+                }
+    - 그룹 선택자
+        - 여러개의 선택자를 동시에 선택, 동시에 적용할 때 사용
+        - 원하는 선택자를 ,를 이용하여 연결
+        - 선택자의 갯수 상관 없이 계속 연결 가능
+
+                .class1, .class2{
+                    property: value
+                }
+    - 가상 클래스 선택자
+        - 실제로 html 요소를 수정하지 않고 css 만으로 가상 요소를 추가해 선택할 수 있음
+
+                선택자:가상클래스{
+                    property: value
+                }
+
+        - first-child가상 클래스 선택자
+            - 해당 요소들 중 첫번째 클래스를 선택한다는 의미
+
+                .class:first-child{
+                    property: value
+                }
+
+        - last-child 가상 클래스 선택자
+            - 해당 요소들 중 마지막 클래스를 선택한다는 의미
+
+                .class:last-child{
+                    property: value
+                }
