@@ -850,15 +850,15 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - hover(오버)
             - 요소 위에 마우스가 올라갔을 때 발생하는 전환효과 등을 말함
 
-                .class:hover{
-                    property: value
-                }
+                    .class:hover{
+                        property: value
+                    }
 
-                ex)
-                .button1:hover{
-                    background:red;
-                    color:#ffffff;
-                }
+                    ex)
+                    .button1:hover{
+                        background:red;
+                        color:#ffffff;
+                    }
 
 - css 레이아웃 흐름
     - Float -> Flex -> Grid
