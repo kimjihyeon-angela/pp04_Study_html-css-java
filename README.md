@@ -800,6 +800,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/layout.jpg" width="600"/>
 
     [레이아웃]
+
 - 선택자
     - 전체선택자
         - html에서의 모든 요소를 선택하는 것
@@ -807,6 +808,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 *{
                     property: value
                 }
+   
     - 그룹 선택자
         - 여러개의 선택자를 동시에 선택, 동시에 적용할 때 사용
         - 원하는 선택자를 ,를 이용하여 연결
@@ -815,12 +817,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 .class1, .class2{
                     property: value
                 }
+    
     - 가상 클래스 선택자
         - 실제로 html 요소를 수정하지 않고 css 만으로 가상 요소를 추가해 선택할 수 있음
 
-                선택자:가상클래스{
-                    property: value
-                }
+                    선택자:가상클래스{
+                        property: value
+                    }
 
         - first-child가상 클래스 선택자
             - 해당 요소들 중 첫번째 클래스를 선택한다는 의미
@@ -835,3 +838,49 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     .class:last-child{
                         property: value
                     }
+
+        - nth-child(n) 가상 클래스 선택자
+            - 원하는 순서에 있는 클래스를 선택한다는 의미
+            - (n)에는 원하는 순서를 넣을 수도 있고, 2n과 같이 2의 배수를 표현하는 숫자도 넣을 수 있고, 연산자가 모두 사용 가능함
+            
+                    .class:nth-child(n){
+                        property: value
+                    }
+
+        - hover(오버)
+            - 요소 위에 마우스가 올라갔을 때 발생하는 전환효과 등을 말함
+
+                .class:hover{
+                    property: value
+                }
+
+                ex)
+                .button1:hover{
+                    background:red;
+                    color:#ffffff;
+                }
+
+- css 레이아웃 흐름
+    - Float -> Flex -> Grid
+    - Float 
+        - 현재 거의 사용하지 않음
+        - 반응형 웹에 적합하지 않기 때문
+            - 반응형 웹 : 모바일, 태블릿, pc 등 접속하는 기기의 너비에 맞추어 레이아웃이 변하는 웹페이지
+        - float를 사용한 코드도 읽을 수있기 위해 배워야 함
+        - 레이아웃이 어떻게 변해왔는지 알면 flex를 더 효과적으로 사용할 수 있음
+    - Flex와 Grid를 상황에 따라 혼용함
+
+- Float 레이아웃
+    - float
+        - 기본값 : none
+
+                float:none
+        - left, right로 요소를 배치시킬 수 있음
+
+                float:left
+                float:right
+    - clear
+        - float가 적용된 요소, float가 적용된 요소에게 영향을 받고 있는 요소들에게 추가로 줄 수 있는 속성
+        
+
+- Flex
