@@ -909,6 +909,35 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - float 정렬
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/mydiay.gif" width="600"/>
 
-
-
 - Flex
+    - css 레이아웃의 꽃
+    - css 레이아웃 배치에 중점을 두고 고안되었기 때문에 기존의 float 방식보다 훨씬 수월하고 간단하게 레이아웃을 잡을 수 있음
+    - 요소의 속성을 flex로 변경
+    - flex-direction : row(행) / column(열)
+    - flex-direction이 바뀌면 중심축의 방향이 바뀌기 때문에 justify-content, align-items의 정렬 방향도 바뀜
+    - flex-direction의 기본값 : row ㅁㅁㅁㅁ
+    - flex-direction: column : ㅁ
+                              ㅁ
+                              ㅁ
+                              ㅁ
+    - justify-content : 중심축 방향 정렬
+        - flex-start : 기본값 => container 시작점에 정렬
+        - flex-end : container 끝부분을 기준으로 정렬
+        - center: 중앙정렬
+        - space-between : 양끝에는 여백이 없고 container 안의 item들이 균일한 간격을 두고 정렬됨
+        - space-around : 양끝에도 여백이 생기고 container 안의 item들이 균일한 간격을 두고 정렬됨
+        - space-evenly : 양끝과 container 안의 item들의 모든 여백의 크기가 균일함
+    - align-items : 중심축 반대 방향 정렬
+        - stretch : 기본값 => item을 container 영역을 꽉 채움
+        - flex-start : 시작점 기준으로 정렬
+        - flex-end : container의 끝부분 기준으로 정렬
+        - center : 중앙정렬
+        - align-items는 flex-item이 한줄일 때 우선 적용하고 두줄 이상일 경우 align-content라는 다른 속성을 써줘야 함
+
+
+                display : flex
+                flex-direction : row / flex-direction : column
+                justify-content : space-between
+                align-items : center
+
+    
