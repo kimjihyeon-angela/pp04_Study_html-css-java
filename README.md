@@ -903,6 +903,12 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
         [float_right + clear_right]
 
+- 실습
+    - 다이어리 만들기
+        - hover 선택자
+        - float 정렬
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/mydiay.gif" width="600"/>
+
 
 
 - Flex

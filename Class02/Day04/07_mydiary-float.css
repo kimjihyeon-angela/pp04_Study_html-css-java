@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.wrapper{
+    width: 620px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 40px 30px;
+    border-radius: 15px;
+}
+
+.wrapper__head{
+    border-bottom: 1px dashed gray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper__head__title{
+    font-size: 32px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.wrapper__head__sub-title{
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#point{
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: block; 
+    /* span태그는 inline 요소이기 때문에 margin이 먹히지 않음 => block 요소로 바꿔줘야함 */
+    margin-top: 15px;
+}
+
+.wrapper__body{
+    border: 1px solid #dddddd;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+.body__content__title{
+    background-color: #f4f4f4;
+    font-size: 18px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    /* padding: 5px; */
+}
+
+.red{
+    color: red;
+    font-weight: 600px;
+}
+
+.yellow{
+    color: orange;
+    font-weight: 600px;
+}
+
+.blue{
+    font-size: 22px;
+    font-style: italic;
+    color: blue;
+    font-weight: bold;
+}
+
+.body__content__date{
+    color: #919191;
+    font-size: 14px;
+    text-align: right;
+}
+
+.header{
+    /* width: 100%; 기본적으로 width는 100%로 나옴 */
+    border-bottom: 1px solid gray;
+}
+
+.header-inner{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: rebeccapurple; */
+}
+
+.logo{
+    /* background-color: red; */
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.logo h1 a{
+    text-decoration: none;
+    color: orange;
+}
+
+.menu{
+    /* background-color: blue; */
+    float: left;
+    height: 80px;
+    width: calc(100% - 200px);
+    text-align: center;
+}
+
+.menu__ul{
+    /* background-color: red; */
+    display: inline-block;
+
+}
+
+.menu__ul li{
+    float: left;
+    list-style: none;
+}
+
+.menu__ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+
+.menu__ul li a:hover{
+    color: orange;
+}
+
+.user{
+    /* background-color: green; */
+    float: left;
+    height: 80px;
+    width: 100px;
+    padding-top: 23px;
+}
+
+.clearfix{
+    clear: both;
+}
