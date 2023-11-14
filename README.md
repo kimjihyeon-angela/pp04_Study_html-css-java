@@ -876,11 +876,25 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 float:none
         - left, right로 요소를 배치시킬 수 있음
+        
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/float_left.jpg" width="600"/>
+        
+        [float:left]
+
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/float_right.jpg" width="600"/>
+        
+        [float:right]
 
                 float:left
                 float:right
     - clear
         - float가 적용된 요소, float가 적용된 요소에게 영향을 받고 있는 요소들에게 추가로 줄 수 있는 속성
+        - 기본값 : none
+
+                clear:none
         
+        - left, right, both
+        - both를 많이 사용함
+
 
 - Flex
