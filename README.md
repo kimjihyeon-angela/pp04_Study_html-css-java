@@ -895,6 +895,14 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         
         - left, right, both
         - both를 많이 사용함
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/float_right-clear_left.jpg" width="600"/>
+
+        [float_right + clear_left]
+
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/float_right-clear_right.jpg" width="600"/>
+
+        [float_right + clear_right]
+
 
 
 - Flex
