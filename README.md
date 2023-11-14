@@ -825,13 +825,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - first-child가상 클래스 선택자
             - 해당 요소들 중 첫번째 클래스를 선택한다는 의미
 
-                .class:first-child{
-                    property: value
-                }
+                    .class:first-child{
+                        property: value
+                    }
 
         - last-child 가상 클래스 선택자
             - 해당 요소들 중 마지막 클래스를 선택한다는 의미
 
-                .class:last-child{
-                    property: value
-                }
+                    .class:last-child{
+                        property: value
+                    }
