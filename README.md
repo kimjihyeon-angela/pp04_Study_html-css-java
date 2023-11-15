@@ -917,9 +917,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - flex-direction이 바뀌면 중심축의 방향이 바뀌기 때문에 justify-content, align-items의 정렬 방향도 바뀜
     - flex-direction의 기본값 : row ㅁㅁㅁㅁ
     - flex-direction: column : ㅁ
-                              ㅁ
-                              ㅁ
-                              ㅁ
+                               ㅁ
+                               ㅁ
+                               ㅁ
     - justify-content : 중심축 방향 정렬
         - flex-start : 기본값 => container 시작점에 정렬
         - flex-end : container 끝부분을 기준으로 정렬
@@ -940,4 +940,38 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 justify-content : space-between
                 align-items : center
 
-    
+### Day 05
+- 선택자
+    - 가상클래스 선택자
+    - first-of-type
+        - first-child와 비슷하지만 다름
+        - first-child 
+            - 형제 요소 중 첫번째 요소를 선택하는 가상 클래스
+            - 같은 부모 안에 있는 형제 요소 중 첫 번째 요소 선택
+
+                    <div class="container">
+                        <h1>이렇게</h1>
+                        <p>자식이 있다면?</p>
+                    </div>
+
+                    .container h1:first-child{
+                        background:red;
+                    }
+                    => h1 background 색상이 red로 적용됨
+
+                    .container p:first-child{
+                        background:red;
+                    }
+                    => container의 첫번째 자식요소가 h1이기 때문에 p태그를 first-child로 인식하지 않아 적용되지 않음
+        - first-of-type 
+            - 형제 요소 중 첫번째 요소를 선택하는 가상 클래스
+            - 해당되는 요소만 카운트한다는 점이 first-child와 다른점임
+
+
+
+
+
+            :first-of-type
+            :active
+            :focus
+            :visited
