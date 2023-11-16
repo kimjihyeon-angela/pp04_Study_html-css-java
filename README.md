@@ -1046,7 +1046,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 
         [가상요소 선택자 사용시 css]
-        
+
             .box1{
                 width : 200px;
                 height: 300px;
@@ -1059,3 +1059,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             }
 
         - 결과는 같음
+
+- 형제요소 선택자
+    - A와 같은 부모를 가지고 있는 형제 요소들 중 B를 선택함
+
+            A~B{
+                property : value
+            }
+
+- flex 추가
+    - 
