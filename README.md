@@ -1023,6 +1023,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             </div>
         [html 소스]
 
+
             .box1{
                     width : 200px;
                     height: 300px;
@@ -1033,10 +1034,12 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 }
         [css 소스]
 
+
             <div class="box1">
                 나는 박스1입니다.
             </div>
         [가상요소 선택자 사용시 html]
+
 
             .box1{
                 width : 200px;
