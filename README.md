@@ -943,6 +943,12 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 ### Day 05
 - 선택자
     - 가상클래스 선택자
+
+            :first-of-type
+            :active
+            :focus
+            :visited
+
     - first-of-type
         - first-child와 비슷하지만 다름
         - first-child 
@@ -967,11 +973,81 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - 형제 요소 중 첫번째 요소를 선택하는 가상 클래스
             - 해당되는 요소만 카운트한다는 점이 first-child와 다른점임
 
+                    <div class="container">
+                        <h1>제목입니다.</h1>
+                        <p>첫번째 p 태그 입니다.</p>
+                        <p>두번째 p 태그 입니다.</p>
+                        <span>첫번째 span 태그 입니다.</span>
+                        <p>세번째 p 태그 입니다.</p>
+
+                    </div>
+
+                    .container h1:first-child{
+                        background:red;
+                    }
+                    => h1 background 색상이 red로 적용됨
+
+                    .container p:first-of-type{
+                        background:red;
+                    }
+                    => p태그들 중 첫번째 p 태그에 background 색상이 red로 적용됨
+
+### Day 06
+- 선택자
+    - of-type
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/of-type-and-child.jpg" width="600"/>
+
+    - active
+        - 활성화된 요소를 선택하는 가상 클래스 선택자
+        - 활성화된 요소 : 버튼 등을 클릭해서 요소의 동작이 활성화되어 있는 상태
+            ex) 버튼을 클릭할 때 색이 변하는 것
+
+    - focus
+        - focus를 받고 있는 입력 창 등의 요소를 선택하는 가상 클래스 선택자
+        - Tab키 등을 이용해서 입력창의 커서가 활성화되어 있는 상태
+
+    - visited
+        - 사용자가 방문한 적 있는 링크를 선택하는 가상 클래스 선택자
+        - 방문한 적 있는 링크 : 링크를 눌러서 해당 경로를 방문한 기록이 브라우저상에 남아 있는 링크
+            ex) 기본컬러 -> 보라색
+
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/active-focus-visited.gif" width="600"/>
+
+- 가상 요소 선택자
+    - 실제로 html요소를 수정하지 않고, css 만으로 가상 요소를 추가해 선택할 수 있음
+    - before, after
+
+            <div class="box1">
+                나는 박스1입니다.
+                <p class="text">나는 박스2입니다.</p>
+            </div>
+        [html 소스]
+
+            .box1{
+                    width : 200px;
+                    height: 300px;
+                    background-color: yellow;
+                }
+            .text{
+                    background-color: blue;
+                }
+        [css 소스]
+
+            <div class="box1">
+                나는 박스1입니다.
+            </div>
+        [가상요소 선택자 사용시 html]
+
+            .box1{
+                width : 200px;
+                height: 300px;
+                background-color: yellow;
+            }
+            .box1:after{
+                content:"나는 박스2입니다.";
+                display: block;
+                background-color: blue;
+            }
+        [가상요소 선택자 사용시 css]
 
 
-
-
-            :first-of-type
-            :active
-            :focus
-            :visited

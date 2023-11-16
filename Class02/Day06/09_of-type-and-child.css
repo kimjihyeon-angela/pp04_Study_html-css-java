@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.container p:first-child{
+    background-color: red;
+    /* 
+        container의 첫번째 자식요소는 h1이기 때문에 첫번째 p태그에 적용하고 싶었던 background : red는 적용되지 않음 
+    */
+}
+
+.container p:first-of-type {
+    background-color: blue;
+}
+
+.container p:nth-of-type(2){
+    background-color: orange;
+}
+
+.container p:last-of-type {
+    background-color: green;
+}
+
