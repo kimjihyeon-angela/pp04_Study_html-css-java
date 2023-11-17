@@ -1067,5 +1067,17 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 property : value
             }
 
+### Day 07
 - flex 추가
-    - 
+    - flex => css 레이아웃 배치에 중점을 두고 고안됨
+    
+            display: flex
+            flex-direction : row | column => 중심축 설정
+            justify-content :             => 중심축 기준으로 정렬 설정
+            align-item :                  => 중심 반대축 방향의 정렬 설정
+
+    - flex-wrap
+        - flex-item이 여러개일 때 item 들의 줄바꿈을 허용할 것인지 말 것인지 결정
+        - 기본값 : nowrap => 무조건 한줄 안에 들어가게 강제함
+        - wrap : item의 규격에 맞춰 다음줄로 개행됨
+        - 주의 : align-items는 flex-item이 한줄일 때 우선 적용됨, 두줄 이상일 때에는 align-content라는 다른 속성을 써줘야 함
