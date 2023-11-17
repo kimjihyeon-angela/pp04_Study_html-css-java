@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 2px solid red;
+    display: flex;
+}
+
+.container div{
+    background: blue;
+    margin: 5px;
+}

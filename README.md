@@ -1081,3 +1081,43 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 기본값 : nowrap => 무조건 한줄 안에 들어가게 강제함
         - wrap : item의 규격에 맞춰 다음줄로 개행됨
         - 주의 : align-items는 flex-item이 한줄일 때 우선 적용됨, 두줄 이상일 때에는 align-content라는 다른 속성을 써줘야 함
+
+    - align-content
+        - 여러 줄이 된 flex-item의 중심 반대 축 정렬을 어떻게 할 지 결정
+        - 기본값 : stretch
+            - item의 실제 규격과 상관 없이 늘어난 형태
+        - flex-start : container의 시작점을 기준으로 item 정렬
+        - flex-end : container의 끝점을 기준으로 item 정렬
+        - center : 중심을 기준으로 item 정렬
+        - space-between : start-line과 end-line으로 벌어져 정렬됨
+        - space-around : 축을 기준으로 위, 아래의 간격이 동일함 => 가운데는 start-line, end-line의 간격과 비교했을 때 2배 간격임
+        - space-evenly : 위, 아래의 간격이 동일함
+
+    - flex-flow
+        - flex-direction과 flex-wrap을 합쳐놓은 단축 속성
+        - 단축속성 : 유사한 성질을 가진 여러 공통의 속성들을 한번에 사용할 수 있도록 묶어놓은 속성
+            ex) border
+
+        [flex-direction, flex-wrap 속성 2개 사용]
+
+                flex-direction: row;
+                flex-wrap: wrap;
+
+        [flex-flow 속성 1개 사용]
+
+                flex-flow: column wrap
+
+    - flex-item 속성들
+        - order : item의 순서 지정
+        - flex-basis : item의 기본 사이즈 지정
+        - flex-shrink
+        - flex-grow 
+
+[display - flex 설정 x -> o -> x]
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/display-flex.gif" width="600"/>
+
+
+
+            
+
+
