@@ -1114,10 +1114,14 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - flex-grow 
 
 [display - flex 설정 x -> o -> x]
-    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/display-flex.gif" width="600"/>
+   
+<img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/display-flex.gif" width="600"/>
+
 
 [flex-wrap 설정]
-    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/flex-wrap.gif" width="600"/>
+    
+<img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/flex-wrap.gif" width="600"/>
+
 1. container안의 box들의 width 를 200px로 설정 => flex-wrap의 기본값이 stretch로 container 안에 꽉 채워져 200px로 나오지 않음
 2. flex-wrap 설정 => wrap으로 변경하여 box들의 width로 설정된 200px로 나옴
             
