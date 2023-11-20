@@ -1125,5 +1125,39 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 1. container안의 box들의 width 를 200px로 설정 => flex-wrap의 기본값이 stretch로 container 안에 꽉 채워져 200px로 나오지 않음
 2. flex-wrap 설정 => wrap으로 변경하여 box들의 width로 설정된 200px로 나옴
             
+### Day 08
+- CSS 상속
+    - 부모요소의 속성값을 자식요소에게 상속함
+
+            <div class="container">
+                바깥에 있는 박스입니다.
+                <div class="inner-box">
+                    <p> 안쪽에 있는 박스입니다. </p>
+                </div>
+            </div>
+
+            .container{
+                color: red;
+            }
+
+        - 바깥에 있는 박스입니다. 안쪽에 있는 박스입니다. 2개 모두 빨간색 적용됨
+    - 모든 속성이 상속되지는 않음
+
+            <div class="container">
+                바깥에 있는 박스입니다.
+                <div class="inner-box">
+                    <p> 안쪽에 있는 박스입니다. </p>
+                </div>
+            </div>
+
+            .container{
+                color: red;
+                border: 3px dashed blue
+            }
+        
+        - border 속성은 container에만 적용됨
+        - 상속되는 속성과 상속되지 않는 속성이 있기 때문
+            - 상속되는 속성 : color, font-family, font-size 등등
+            - 상속되지 않는 속성 : padding, margin, border 등등
 
 
