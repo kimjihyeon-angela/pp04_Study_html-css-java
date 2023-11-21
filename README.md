@@ -1159,5 +1159,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 상속되는 속성과 상속되지 않는 속성이 있기 때문
             - 상속되는 속성 : color, font-family, font-size 등등
             - 상속되지 않는 속성 : padding, margin, border 등등
+    - 여러개의 상속 속성이 겹쳤을 때
+        - Cascading이라는 룰이 우선순위를 결정함
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/inherit.gif" width="600"/>
+
 
 
