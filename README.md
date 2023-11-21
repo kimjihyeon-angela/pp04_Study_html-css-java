@@ -1287,6 +1287,34 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - rem
             - <strong>최상위 html요소</strong>의 font-size 속성 값에 비례하여 값을 결정함
 
+- 캐스케이딩(cascading)
+    - css = cascading style sheet
+    - cascading : 폭포, 위에서 아래로 흐르는 이라는 의미
+    - 수많은 스타일 요소 중 어떤 스타일을 브라우저에 그릴지 결정해주는 css 우선순위 적용 원리
+    - 기준
+        - 중요도
+            - css가 선언된 위치에 따라 우선순위가 결정됨
+            - 브라우저 스타일 시트 < 사용자 스타일 시트 < 개발자 스타일 시트 순으로 중요도가 높음
+            - 브라우저 스타일 시트
+                - 아무런 css 설정하지 않은 html 문서로 기본적으로 저장되어 있는 스타일을 의미함
+            - 사용자 스타일 시트
+                - 사용자 폰트 지정
+                - 고대비 모드 사용
+            - 개발자 스타일 시트
+                - 해당 웹페이지의 개발자가 만들어서 넣어놓은 스타일
+                - link로 연결한 css 파일 < style 요소 안에 있는 css < 인라인  스타일 css
+                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/cascading.gif" width="600"/>
+            - 인라인 스타일 css < style요소 안에 있는 css < link로 연결한 css 파일 < 사용자 스타일 시트 < 브라우저 스타일 시트 순
+
+        - 구체성(명시도)
+            - 선택할 대상을 구체적으로 특정할수록 명시도가 높아짐
+            - 명시도가 높아지면 우선순위도 함께 높아짐
+            - 부모에게 상속받은 속성 < 전체 선택자 < 태그 선택자 < 클래스 선택자 가상 선택자 < ID 선택자 순
+
+            - 강제로 명시도 끌어올리기 : !important (가능한 사용 x)
+
+        - 선언순서
+            - 나중에 선언한 스타일이 우선 적용됨
 
         
 
