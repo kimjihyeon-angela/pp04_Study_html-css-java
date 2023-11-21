@@ -1202,7 +1202,36 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             ex) color : #5145d8;
         - RGB 코드 사용
             ex) color : rgb(213,229,37)
-    
-        
-
+    - line-height : 텍스트의 행간을 설정함
+        ex) line-height : 1.8 => 해당 텍스트의 1.8배의 행간
+        ex) line-height : 52px -> 52px 크기의 행간 => 다른 단위를 적을 때는 무조건 단위까지 적어줘야 함
+    - letter-spacing : 텍스트의 자간을 설정함
+        - 다양한 단위 부여 가능
+        - 기본값 : normal
+        - em, px
+        - 양수, 음수 사용 가능
+    - word-spacing : 텍스트의 단어간 간격 지정
+        - 다양한 단위 부여 가능
+        - 기본값 : normal
+        - em, px
+        - 양수, 음수 사용 가능
+    - text-align : 블록요소나 표 안에서 텍스트의 가로 정렬 방식을 지정
+        - left, right, center로 설정 가능
+        - 좌측, 우측, 중앙 정렬
+        - justify => 양측정렬
+            - left와 비교했을 때 left 정렬은 우측이 울퉁불퉁한 경우가 있으나 justify의 경우 좌 우측 라인이 한줄로 이어져 있음
+    - vertical-align : 인라인 요소나 표 안에서 텍스트의 세로 정렬 방식을 지정
+        - top, middle, bottom 으로 설정 가능
+        - 상단, 중앙, 하단 정렬
+    - text-indent : 텍스트의 들여쓰기를 설정함
+        - 다양한 단위 부여 가능
+        - 기본값 : 0
+        - px, em, rem
+        - 양수, 음수 사용 가능
+    - text-transform : 영문 텍스트의 대/소문자를 바꿀 수 있음
+        ex) text-transform : capitalize
+        - 기본값 : none
+        - capitalize => 각각의 단어의 첫번째 글짜 대문자로 변환
+        - uppercase => 모두 대문자로 변환
+        - lowercase => 모두 소문자로 변환
 
