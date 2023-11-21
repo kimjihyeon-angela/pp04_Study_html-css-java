@@ -1163,5 +1163,46 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - Cascading이라는 룰이 우선순위를 결정함
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/inherit.gif" width="600"/>
 
+- 웹폰트
+    - font-family : "폰트이름"
+    
+            font-family: arial, "맑은 고딕", sans-serif;
+
+    - font-family에 2개 이상의 폰트 설정
+        - 앞에서부터 우선순위 부여받음
+        - 유저 컴퓨터에도 폰트 파일이 설치되어 있어야 글시체가 제대로 보임
+    
+    - 웹폰트 : 웹전용 폰트
+        - 사용자가 로컬컴퓨터에 폰트를 직접 설치하지 않아도 특정 서버에 위치한 폰트를 다운받아 웹페이지에 표시해주는 것
+        - 사용자들이 알지 못하는 폰트 다운로드가 진행되는 것임
+
+    - 웹폰트 적용 방법
+        - 폰트 파일을 직접 다운로드 받아서 적용하는 방법
+            - @font-face이용
+                1. 웹폰트 파일 준비 (확장자명 : woff / woff2 / ttf / eot)
+                2. css문서에서 @font-face를 이용해 폰트 파일 불러옴
+                3. 불러운 폰트 파일을 이용해 새로운 font-family를 만듦
+                4. 만든 font-family 사용
+
+        - 외부 서비스에서 제공하는 링크를 이용하는 방법
+            - @import 혹은 link태그 이용
+                1. 구글 폰트에 접속해서 원하는 폰트를 찾음
+                2. 폰트를 상세페이지 접속 후, 원하는 굵기의 폰트 옆에 있는 Select this style 클릭
+                3. Use on web 항목에서 import를 선택하고 해당 import 구문을 css 파일 내에 입력
+                4. css rules to specify familes를 참고하여 font-family 작성
+
+- 폰트
+    - font-size : 텍스트의 크기를 지정함
+    - font-weight : 텍스트의 두께를 지정함
+    - text-decoration : 텍스트에 장식용 선을 추가함
+    - color : 텍스트의 색 지정 
+        - 색상 직접 지정
+            ex) color : red;
+        - Hex 코드 사용
+            ex) color : #5145d8;
+        - RGB 코드 사용
+            ex) color : rgb(213,229,37)
+    
+        
 
 
