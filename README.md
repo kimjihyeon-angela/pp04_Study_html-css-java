@@ -1234,4 +1234,26 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - capitalize => 각각의 단어의 첫번째 글짜 대문자로 변환
         - uppercase => 모두 대문자로 변환
         - lowercase => 모두 소문자로 변환
+    - word-break : 텍스트가 콘텐츠 박스 영역 밖으로 넘쳤을 때 어떻게 줄을 바꿀지 설정
+        - keep-all : 띄어쓰기 기준 줄바꿈
+        - break-all : 어절단위 줄바꿈 => 지정한 범위에 글이 꽉 참 but, 가독성은 조금 떨어짐
+    - overflow-wrap : 단어가 콘텐츠 박스 영역 밖으로 넘쳤을 때 줄바꿈 여부를 설정
+        - 좁은 영역 안에 긴 단어가 들어가 콘텐츠 박스 영역 밖으로 넘친 경우 -> 콘텐츠 영역 밖으로 나가게 됨 => overflow-wrap을 설정한 경우 다음줄로 넘어가게 설정 가능
+            ex) This is a WATERMELON. A watermelon is delicious 라는 문장에서
+                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/overflow-wrap-vs-word-break.jpg" width="600"/>
+        - normal
+        - break-word
+    - overflow : 콘텐츠가 커서 요소 안에서 내용을 다 보여주기 힘들 때, 어떤 방식으로 보여줄지 설정함
+        - 기본값 : visible
+        - hidden
+        - scroll
+        - auto
+    - text-overflow : 줄바꿈을 하지 않을 때, 요소 밖으로 넘치는 text를 어떻게 표기할 것인지 설정함
+        - text-overflow를 적용하고 싶은 요소에는 반드시 다음 선언들도 함께 적용되어야 함
+        - text-overflow 선행 조건 
+            - white-space : nowrap;
+            - overflow : hidden;
+        - 기본값 : clip
+        - ellipsis
+    
 
