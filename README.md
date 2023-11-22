@@ -1316,5 +1316,81 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 선언순서
             - 나중에 선언한 스타일이 우선 적용됨
 
+### Day 09
+- 배경
+    - background-color : 요소의 배경에 색상 지정 가능
+    - background-image
+        - 요소의 배경 이미지를 한개 혹은 여러 개 지정함
+            - background-image:url("이미지 경로")
+        - 그라데이션도 지정이 가능함
+            - background-image:linear-gradient(방향, 시작 색상, 종료 색상)
+            - 방향 : to top, to left, to right, to bottom, 생략(to top)
+            - background-image : radial-gradient
+            - background-image : conic-gradient
+        - 콤마(,)를 이용하여 여러가지 배경을 동시에 사용하기도 가능
+        - 먼저 선언하는 것이 위에 올라오게 됨
+    - background-position
+        - 요소의 배경 이미지의 위치를 지정
+        - bottom, top, left, right, center를 조합하여 위치 지정 가능
+        - 직접적인 수치 지정 가능 (50px 150px) -> 첫번째 값 : x축
+    - background-repeat
+        - 요소의 배경 이미지의 반복 여부, 반복 방향 지정
+        - 기본값 : repeat으로 끝없이 반복되는 형태임
+        - no-repeat : 반복 없이 한개의 이미지만 원하는 위치에 들어가짐
+        - repeat-x / repeat-y : 해당 축으로만 이미지가 반복됨
+    - background-size
+        - 요소의 배경 이미지의 크기 지정
+        - 기본값 : auto -> 이미지가 가지고 있는 고유한 값으로 입력
+        - cover : 많이 쓰이는 속성 중 하나, 이미지를 늘려서 요소 안에 빈틈 없고 찌그러지지 않도록 만듦
+        - contain : 이미지 늘려서 요소 안에 채움 (이미지 전체 다 보이는것이 더 중요하기 때문에 빈틈이 있을 수 있음)
+        - 직접적인 수치 지정 (50px 150px) -> 첫번째 값 : x축
+    - background-attachment
+        - 요소의 배경 이미지의 스크롤 여부 지정
+        - 기본값 : scroll -> local과 비슷하지만 내부에서 스크롤 작동 x
+        - fixed : 고정
+        - local : 내부에서도 스크롤 작동
+    - 단축속성
+        - background-color / background-image / background-position / background-repeat / background-size
+
+                background: color image repeat position/size attachment
+
+                background: red url("../star.png") no-repeat center/cover fixed
+
+    - object-fit
+        - img, video 등 대체요소의 내용이 지정된 너비와 높이에 맞춰지는 방식을 지정함
+        - 기본값 : fill -> 사이즈에 맞춰 찌그러지지만 꽉채움
+        - cover : 백그라운드 사이즈에 cover를 준것과 같게 빈틈이 생기지 않는 범위에서 적절한 비율로 요소 꽉 채움
+        - contain : 여백과 상관없이 이미지 전체가 보이도록 요소를 채움
+        - none : 이미지 원본 비율대로 보여줌
         
+    - object-position
+        - img, video 등 대체요소의 콘텐츠 정렬 방식을 지정함
+        - 직접적인 수치 지정
+        - top, bottom, left, right, center를 조합하여 위치 지정 가능
+
+- 색상
+    - 색상 이름
+        - 색의 이름을 표기하는 방식
+        - 기본 16색 + 200색 => 총 216색(웹안전색상) 표기 가능
+        - 웹안전색상 : 어떤 운영체제, 어떤 브라우저에서도 안전하게 그려지는 색
+        - vs code에서 자동완성으로 제공됨
+        - ex) red, blue 등
+    - Hex 색상 코드
+        - 16진수 여섯자리로 색상을 표기하는 방법
+        - 실무에서 가장 많이 사용되는 방법
+        - https://htmlcolorcodes.com/color-picker/ 
+          -> VSCode 내장 색상 선택기
+        - ex) #94FB11
+    - rgb / rgba
+        - red, green, blue값을 이용해 색상을 표기하는 방법
+        - 0 ~ 255 사이의 숫자를 입력할 수 있음
+        - rgba : 색상에 투명도도 적용할 수 있음
+        - ex) rgb(251, 247, 17)
+    - opacity
+        - 요소의 불투명도를 설정할 수 있음
+        - 0부터 1까지의 숫자를 지정할 수 있음
+
+
+
+
 
