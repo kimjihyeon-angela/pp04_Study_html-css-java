@@ -1390,6 +1390,36 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 요소의 불투명도를 설정할 수 있음
         - 0부터 1까지의 숫자를 지정할 수 있음
 
+- 단위
+    - 상대단위
+        - vw / vh
+            - 요소의 규격을 viewport의 너비값과 높이값에 비례하여 결정
+            - viewport : 브라우저 안에서 실제로 화면이 그려지는 영역
+            - vw : viewport width
+            - vh : viewport height
+            ex) viewport 1200px 920px인 경우
+                10vw => 1200 * 0.1 = 120px
+                50vh => 920 * 0.5 = 460px
+                100vw => 1200 * 1 = 1200px
+
+- 함수
+    - 특정한 기능을 가지는 상자 같은 것
+    - calc()
+        - 괄호 안의 사칙연산을 수행한 결과를 속성값으로 사용함
+        - 덧셈과 뺄셈의 경우 연산자 앞 뒤에 공백을 한칸씩 둬야 함
+        - 곱셈, 나눗셈 상관 x
+
+                width : calc(2*100px);
+                width : calc(100% - 120px)
+
+        [calc 기본 실습]
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc1.jpg" width="600"/>
+
+        [사이드바, 컨텐츠부분 width 설정]
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc2.jpg" width="600"/>
+        
+
+
 
 
 
