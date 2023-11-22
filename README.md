@@ -1419,7 +1419,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 
         [사이드바, 컨텐츠부분 width 설정]
-        
+
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc2.jpg" width="600"/>
 
 - position
@@ -1434,10 +1434,19 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - absolute
             - 절대 좌표를 기준(absolute의 부모요소 중 relative가 적용된 요소를 기준)으로 요소의 위치 조정 가능
             - top, bottom, left, right 적용 가능
+            <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/absolute.gif" width="600"/>
+
         - fixed
+            - 스크롤과 무관하게 뷰포트를 기준으로 요소의 위치를 설정할 수 있음
         - sticky
+            - 요소의 원래 위치에 있다가 스크롤이 내려가면 지정한 좌표에 고정됨
+            - 기준 : 부모요소의 좌표
     - 해당 방향 기준으로 요소의 좌표값을 변경
         - tob, bottom, left, right
+    - z-index
+        - 여러개의 요소가 겹쳐져 있을 때 무엇이 앞으로 나올지 결정하는 속성
+        - 기본값 : auto
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/z-index.gif" width="600"/>
 
 
 
