@@ -1412,12 +1412,32 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 width : calc(2*100px);
                 width : calc(100% - 120px)
 
+
         [calc 기본 실습]
+
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc1.jpg" width="600"/>
 
+
         [사이드바, 컨텐츠부분 width 설정]
-        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc2.jpg" width="600"/>
         
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/calc2.jpg" width="600"/>
+
+- position
+    - html 요소가 배치되는 방식을 결정하는 속성
+    - 속성값
+        - 기본값 : static
+            - 요소를 문서상 원래 있어야 하는 위치에 배치함
+            - top, bottom, left, right 적용 불가
+        - relative
+            - 원래 있던 자리를 기준으로 요소의 위치를 조정할 수 있음
+            - top, bottom, left, right 적용 가능
+        - absolute
+            - 절대 좌표를 기준(absolute의 부모요소 중 relative가 적용된 요소를 기준)으로 요소의 위치 조정 가능
+            - top, bottom, left, right 적용 가능
+        - fixed
+        - sticky
+    - 해당 방향 기준으로 요소의 좌표값을 변경
+        - tob, bottom, left, right
 
 
 
