@@ -1448,6 +1448,39 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 기본값 : auto
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/z-index.gif" width="600"/>
 
+### Day 10
+- transition
+    - transition-property
+        - 어떠한 속성에 transition을 적용할 것인지 지정함
+        
+                transition-property : color, transform
+    
+    - transition-duration
+        - transition에 걸리는 시간을 지정함
+
+                transition-duration : 0.2s
+
+    - transition-timing-function
+        - transition의 속도 패턴을 지정함
+        - 변화가 일정한 속도로 변할것인지, 느리게 시작해서 빠르게 끝낼것인지 등을 지정할 수 있음
+        - linear : 일정한 속도로 변화
+        - ease : 시작할때는 빨라지다 느려짐
+        - ease-in : 천천히 시작했다가 속도를 높여 끝남
+        - ease-out : 빠른속도로 시작했다가 천천히 끝남
+        - ease-in-out : 천천히 시작 -> 정상속도 -> 빠르게 끝남
+
+                transition-duration 0 :ease-in-out
+
+    - transition-delay
+        - transition 요청을 받은 후, 실제로 실행되기까지 기다려야 하는 시간의 양을 지정
+
+                transition-delay : 2s
+
+    - transition 단축 속성
+        - 순서 : property duration timing-function delay 
+
+                transition : color 0.4s ease-in-out 1s
+    
 
 
 
