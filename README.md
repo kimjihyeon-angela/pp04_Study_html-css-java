@@ -1480,7 +1480,26 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 순서 : property duration timing-function delay 
 
                 transition : color 0.4s ease-in-out 1s
-    
+
+### Day 11
+- transform
+    - 요소에 이동, 회전, 확대 축소, 비틀기 등의 변형 효과를 줄 수 있음
+    - 속성값
+        - translate(x,y)
+            - 요소의 좌표를 움직일 수 있음
+            - x축으로 x만큼, y축으로 y만큼 이동시킴
+            - 양수 음수 모두 입력 가능
+            - 두 값 중 하나만 입력된 경우 같은 값 만큼 이동
+            - 요소의 x축 좌표를 n만큼 움직일 수 있음 => transform : translateX(20px)
+            - 요소의 y축 좌표를 n만큼 움직일 수 있음 => transform : translateY(20px)
+
+                    transform : translate(20px, 25%)
+            
+        - scale(x,y)
+            - x축으로 x만큼, y축으로 y만큼 요소를 축소 혹은 확대함
+
+        - skew(x-angel, y-angle)
+        - rotate(angel)
 
 
 
