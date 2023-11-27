@@ -1537,6 +1537,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - itemWrap
         - 사진이 나오는 전체적인 구조
         - display -> flex를 이용하여 정렬을 정의해줌
+        - flex-wrap: wrap => 여러줄로 나올 수 있도록 설정
     - item
         - 이미지와 이름, 가격이 나올 수 있는 박스
         - overflow : hidden 을 이용하여 박스 사이즈보다 커진 부분에 대하여 보이지 않게 설정
