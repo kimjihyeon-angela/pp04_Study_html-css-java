@@ -1534,7 +1534,45 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - transform은 transition과 animation과 함께 사용하면 더 다채로운 애니메이션 효과를 만들 수 있음
 
 - 쇼핑몰 화면 만들기
-    - 
+    - itemWrap
+        - 사진이 나오는 전체적인 구조
+        - display -> flex를 이용하여 정렬을 정의해줌
+    - item
+        - 이미지와 이름, 가격이 나올 수 있는 박스
+        - overflow : hidden 을 이용하여 박스 사이즈보다 커진 부분에 대하여 보이지 않게 설정
+        - position : relative 를 이용하여 이미지, 이름, 가격 박스를 합칠 수 있게 기준 설정
+    - imgBox
+        - item 박스의 가로 세로 사이즈에 맞추기 위하여 width와 height를 100%로 설정
+        - 가장 앞에 나올 수 있도록 z-index : 1설정해줌 (z-index의 기본값은 auto로 꼭 설정 안해도 됨)
+    - imgBox img
+        - 이미지로 itmBox의 사이즈에 맞추기 위하여 width와 height를 100%로 설정
+        - object-fit : cover를 통해 사진이 해당 사이즈에 맞추기 위해 찌그러지는 것을 방지
+    - textBox
+        - item 박스의 가로 세로 사이즈에 맞추기 위하여 width와 height를 100%로 설정
+        - position: absolute, top:0, left:0 => imgBox와 겹치기 위해 설정
+        - display : flex, flex-direction:column => 이름과 가격을 위아래로 배치 시키기 위해 설정
+    - textBox__name
+        - transform : translateY(50px) => y축 방향으로 50px 이동시키기 위해 설정
+        - opacity : 0 => 투명도 0 => 마우스오버했을 때 투명도 1 만들어 안보이다가 보이게 설정하기 위함
+    - textBox__price
+        - transform : translateY(50px) => y축 방향으로 50px 이동시키기 위해 설정
+        - opacity : 0 => 투명도 0 => 마우스오버했을 때 투명도 1 만들어 안보이다가 보이게 설정하기 위함
+    - .item:after
+        - 가상선택자로 content가 입력되어야 해서 content:""입력
+        - display : block => 
+        - position: absolute, top:0, left:0 => imgBox와 겹치기 위해 설정
+    - hover
+        - imgBox img
+            - transform : scale(1.1) => 이미지를 1.1배 크게 만듦
+            - filter : blur(3px) => 이미지 블러 처리
+        - textBox__name, textBox__price
+            - opacity : 1 => 투명도 0에서 1로 바꿔 글이 안보이다가 보이게 바뀜
+            - transform : translateY(0) => y축을 0으로 바꿔 위에서 설정한 translateY(50)으로 변경되며 위로 올라가는 형식으로 보이게 만듦
+    - transition
+        - item:after, itemBox img, texBox__name, textBox__price
+            - 설정해준 대로 자연스럽게 연결시킴
+        - textBox__price
+            - delay를 통해 다른 transition보다 조금 늦게 반응하도록 만듦
 
 
 
