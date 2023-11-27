@@ -1497,9 +1497,39 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             
         - scale(x,y)
             - x축으로 x만큼, y축으로 y만큼 요소를 축소 혹은 확대함
+            - 요소의 x축 좌표를 n만큼 축소 혹은 확대 할 수 있음 => transform : scaleX(20px)
+            - 요소의 y축 좌표를 n만큼 축소 혹은 확대 할 수 있음 => transform : scaleY(20px)
+
+                    transform : scale(0.75, 1.1)
 
         - skew(x-angel, y-angle)
+            - x축으로 x도 만큼, y축으로 y도 만큼 요소를 기울임
+            - 요소를 x축으로 x도 만큼 기울임 => transform : skewX(15deg)
+            - 요소를 y축으로 y도 만큼 기울임 => transform : skewY(15deg)
+
+                    transform : skew(15deg, 10deg)
+                    
         - rotate(angel)
+            - 요소를 n만큼 회전시킴
+            - 시계방향으로 회전됨
+
+                    transform : rotate(45deg)
+
+### Day 12
+- transform 중첩적용
+    - transform 은 변환함수를 중첩 적용 시키는 것 가능
+    - 요소를 75도 회전시키고 y축 방향으로 120px 이동
+
+            transform : rotate(75deg) translateY(120px)
+    
+    - 요소를 x축 방향으로 30도, y축방향으로 10도 기울이고 45도 회전
+
+            transform : skew(30deg, 10deg) rotate(45deg)
+
+    - 요소를 y축 방향으로 0.75축소시키고 x축 방향으로 20도 기울임
+
+            transform : scaleY(0/75) skewX(20deg)
+
 
 
 
