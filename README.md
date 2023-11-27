@@ -1530,7 +1530,11 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
             transform : scaleY(0/75) skewX(20deg)
 
+- transform + transition
+    - transform은 transition과 animation과 함께 사용하면 더 다채로운 애니메이션 효과를 만들 수 있음
 
+- 쇼핑몰 화면 만들기
+    - 
 
 
 
