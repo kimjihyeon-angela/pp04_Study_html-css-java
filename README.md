@@ -1575,7 +1575,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - textBox__price
             - delay를 통해 다른 transition보다 조금 늦게 반응하도록 만듦
 
-    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/myshop-card.gif" width="600"/>
+    [쇼핑몰 화면 - card]
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/myshop-card.gif" width="600"/>
     
 
 
