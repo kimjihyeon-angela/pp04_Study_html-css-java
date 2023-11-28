@@ -22,6 +22,7 @@ html, body{
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .imgBox{
