@@ -1579,7 +1579,86 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/myshop-card.gif" width="600"/>
     
+### Day 13
+- animation 
+    - animation : 연속되는 여러 이미지를 연결해서 자연스럽게 움직이는 것처럼 보이게 만드는 기법
+    - css를 이용해서 animation을 만드는 방법
+        - transition 속성 사용
+        - animation 속성과 keyframe 활용
+    - transition vs animation
+        - transition 
+            - 특정한 이벤트를 기점으로 작동
+            - transition으로 만들 수 있는 것은 animation보다 transition 사용
+            - hover, click 등
+        - animation
+            - 시작하기 위한 이벤트 필요 x
+            - transition으로 만들 수 없는 경우에만 animation, keyframes 사용
+            - 시작, 정지, 반복까지 제어 가능
+    - animation 속성
+        - @keyframes로 애니메이션을 정의하고, 정의한 애니메이션을 불러와서 제어해주어야 함
+        - 하나의 동작을 만들기 위해 keyframe속성과 애니메이션의 속성을 제어해줘야 함
 
+- @keyframes
+    - CSS 애니메이션의 시작, 중간, 끝 등의 중간상태를 정의함
+    
+            @keyframes moveRight{
+                from{
+                    left: 0;
+                }
+                to{
+                    left: 200px;
+                }
+            }
+    - moveRight : 애니메이션 이름
+    - from : 시작 시점의 css
+    - to : 종료 시점의 css
+    - from, to 대신 진행도 (%) 표기 가능
+    - 진행도로 표기할 경우 0%, 50%, 100%로 중간지점 추가도 가능
+
+- animation 속성들
+    - animation-name
+        - 어떤 keyframes를 요소에 적용할 것인지 지정
+
+                animation-name : moveRight
+
+    - animation-duration
+        - 애니메이션을 한번 재생하는데 걸리는 시간 설정
+
+                animation-duration: 2s
+
+    - animation-direction
+        - 애니메이션 재생 방향 정의(정방향/ 역방향)
+        - 기본값 : normal => 정방향 재생
+        - reverse : 역방향 재생
+        - alternate: 정방향 재생 + 반복 시 정방향, 역방향 번갈아 재생
+        - alternate-reverse : 역방향 재생 + 반복 시 역방향, 정방향 번갈아 재생
+
+                animation-direction:alternate
+    
+    - animation-iteration-count
+        - 애니메이션 재생 횟수 정의
+        - 기본값 : 0
+        - infinite => 무한반복
+        - 원하는 횟수 숫자로 입력해주면 됨
+
+                animation-iteration-count : infinite | 3
+    
+    - animation-timing-function
+        - 애니메이션 재생 패선 정의
+        - transition-timing-function과 유사함
+
+                animation-timing-function : ease-in-out
+    
+    - animation-delay
+        - 애니메이션 시작을 얼마나 지연할 지 설정
+
+                animation-delay : 4s
+
+    - animation 단축속성
+        - name duration timing-function delay iteration-count direction 순서
+
+                animation : moveRight 0.4s linear 1s infinite alternate
+    
 
 
 
