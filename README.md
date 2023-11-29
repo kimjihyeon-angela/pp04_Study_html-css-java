@@ -1658,7 +1658,67 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - name duration timing-function delay iteration-count direction 순서
 
                 animation : moveRight 0.4s linear 1s infinite alternate
+
+### Day 14
+- grid 레이아웃
+    - flex 레이아웃과 grid 레이아웃을 상황에 따라 혼용함
+    - flex 
+        - 1차원적 구조로 row 혹은 column 방향 중 택 1 해야 함
+        - 여러 줄로 나눠야 할 경우 1차원적 구조로 만들어진 flex를 다단으로 중첩시켜 만들어야 함
+    - grid
+        - 2차원적 구조
+        - 동시에 row, column 설정 가능
+
+- grid 속성
+    - 요소의 속성을 grid로 변경
+
+            display : grid
+
+    - grid-template-rows
+        - grid의 행의 개수 및 크기를 지정할 수 있음
+        - 행: 총 3개
+        - 각 행은 1fr(분수), 2fr, 200px로 규정되어 있음
+
+                grid-template-rows : 1fr 2fr 200px
+
+    - grid-template-column
+        - grid의 열의 개수 및 크기를 지정할 수 있음
+        - 열: 총 3개
+        - 각 열은 1fr(분수), 2fr, 1fr, 1fr로 규정되어 있음 => 1:2:1:1 비율로 나눔을 이야기함
+
+                grid-template-rows : 1fr 2fr 1fr 1fr
+
+    - repeat(a,b)
+        - grid-template에서 사용할 수 있는 반복 함수
+        - b 규격의 grid-template을 a개 생성함
+
+            [예시 1번]
+                grid-template-columns:repeat(4, 1fr)
+
+            [예시 1번과 같은 내용]
+
+                grid-template-columns : 1fr 1fr 1fr 1fr 
+
+            [예시 2번]
+                grid-template-columns:3fr repeat(2, 1fr 200px)
+
+            [예시 2번과 같은 내용]
+
+                grid-template-columns : 3fr 1fr 200px 1fr 200px
     
+    - grid-column / grid-row
+        - grid-item이 얼마만큼의 영역을 차지할 지 정의 함
+        - grid-column : grid-line의 번호 기준으로 영역 할당
+        - grid-row : grid-number의 번호 기준으로 영역 할당
+
+                grid-column: 1/3
+
+                => grid-line 1번에서 3번
+    
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
+
+        
+
 
 
 
