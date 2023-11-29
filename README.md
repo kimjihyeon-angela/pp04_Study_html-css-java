@@ -1693,6 +1693,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - b 규격의 grid-template을 a개 생성함
 
             [예시 1번]
+
                 grid-template-columns:repeat(4, 1fr)
 
             [예시 1번과 같은 내용]
@@ -1700,6 +1701,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 grid-template-columns : 1fr 1fr 1fr 1fr 
 
             [예시 2번]
+            
                 grid-template-columns:3fr repeat(2, 1fr 200px)
 
             [예시 2번과 같은 내용]
@@ -1715,7 +1717,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 => grid-line 1번에서 3번
     
-    
+
     [grid layout column, row 설정]    
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
 
