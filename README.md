@@ -1719,7 +1719,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     
 
     [grid layout column, row 설정]    
-            <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
+                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
 
         
 
