@@ -1693,7 +1693,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - b 규격의 grid-template을 a개 생성함
 
             [예시 1번]
-
                 grid-template-columns:repeat(4, 1fr)
 
             [예시 1번과 같은 내용]
@@ -1701,7 +1700,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 grid-template-columns : 1fr 1fr 1fr 1fr 
 
             [예시 2번]
-
                 grid-template-columns:3fr repeat(2, 1fr 200px)
 
             [예시 2번과 같은 내용]
@@ -1717,12 +1715,24 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 => grid-line 1번에서 3번
     
-
+    
     [grid layout column, row 설정]    
-                <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/grid-layout.gif" width="600"/>
 
-        
 
+### Day 15
+- flex 레이아웃을 이용하여 만들었던 쇼핑몰 카드 화면을 grid 레이아웃으로 바꿔보기
+
+- flex와 grid의 차이점
+    - flex
+        - 비교적 작은 단위의 레이아웃 구성에 적합
+        - 작업 유동성이 높기 때문에 디자인이나 기획이 확실하게 잡히지 않아 변경 가능성이 있는 경우에 적합
+    - grid
+        - 큰 규모의 레이아웃 구성에 적합
+        - 레이아웃 구조가 확실하게 잡혀있는 경우, 효율적으로 반응형 디자인을 구현할 수 있음
+        - 상대적으로 최신 기술이기 때문에 모든 브라우저에서 지원하지 않음
+    
+    
 
 
 
