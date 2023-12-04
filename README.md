@@ -1732,7 +1732,29 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         - 레이아웃 구조가 확실하게 잡혀있는 경우, 효율적으로 반응형 디자인을 구현할 수 있음
         - 상대적으로 최신 기술이기 때문에 모든 브라우저에서 지원하지 않음
     
+### Day 16
+- 반응형 웹
+    - 다양한 크기의 디바이스에 맞춰 보이는 화면이 달라지는 웹페이지를 의미함
+
+- 미디어 쿼리
+    - 뷰포트의 너비에 따라 웹 사이트의 스타일 시트를 수정할 수 있음
+    - 뷰포트의 너비 이외에도 단말기의 종류, 해상도 등을 기준으로 설정할 수 있음
+
+            @media screen and (max-width:500px) {
+                // 스크린의 viewport 너비가 500px 이하일 경우
+                // 적용시킬 스타일 시트
+            }
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/media-query.gif" width="600"/>
+
+
+- breakPoint
+    - viewport : 실제로 웹페이지의 컨텐츠가 차지하는 영역
+    - 반응형 웹사이트 작업의 기준이 되는 중단점을 말함
+    - pc / 태블릿 / 모바일의 기준이 되는 규격 분기를 말함
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/breakpoint.jpg" width="400"/>
+        <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/break-point.gif" width="600"/>
     
+
 
 
 
