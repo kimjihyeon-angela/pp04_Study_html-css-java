@@ -1754,7 +1754,53 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/breakpoint.jpg" width="400"/>
         <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/break-point.gif" width="600"/>
     
+- 반응형 웹에 자주 쓰이는 속성
+    - max-width / max-height
+        - 요소의 최대 크기 지정하는 속성
+    - max-width / max-height
+        - 요소의 최소 크기 지정하는 속성
+    - max()
+        - 소괄호 안에 입력된 값 중 제일 높은 값을 속성값으로 출력하는 함수
+        - 소괄호 안에는 여러 개의 콤마로 연결해 입력해 줄 수 있음
+    - min()
+        - 소괄호 안에 입력된 값 중 제일 낮은 값을 속성값으로 출력하는 함수
+        - 소괄호 안에는 여러 개의 콤마로 연결해 입력해 줄 수 있음
 
+<hr>
 
+## Class 03 JavaScript
+### Day 01
+- JavaScript에서 많이 쓰이게 될 명령어
+    - console.log()
+        - ()안에 출력하고 싶은 내용을 입력해주면 됨 
+        
+                console.log(1) 
+                =>1 출력됨
+
+        - 기본적인 사칙연산 가능 
+        
+                console.log(10 + 20) 
+                => 30 이 출력됨
+
+- 변수
+    - 데이터를 담아주는 상자
+    - 변수 선언 키워드
+        - var
+            - 자주 사용하지 않음
+        - let
+            - let 변수명 ;
+
+                    let box;
+        - const
+    - 변수명은 명시적이어야 함
+    - 할당
+        - 할당 연산자(=)를 이용하여 데이터를 변수에 할당해줌
+        - box 변수에 할당해주기
+
+                box = 123;
+    - 선언과 할당은 동시에 할 수도 있음
+
+            let box = 123;
+    
 
 
