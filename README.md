@@ -1801,6 +1801,34 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - 선언과 할당은 동시에 할 수도 있음
 
             let box = 123;
-    
+
+### Day 02
+- 재할당
+    - 이미 데이터가 할당되어 있는 변수에 다시 할당하는 것
+
+            let box;
+            box = 1;
+            console.log(box);
+            box = 5;
+            console.log(box);
+
+            출력내용
+            => 1
+            => 5 
+
+    - let 재할당 가능
+    - const 재할당 불가능
+
+- 재선언
+    - 이미 선언되어 있는 변수명으로 다시 선언 시도하는 것
+
+            let box;
+            let box;
+
+            출력 내용
+            => Uncaught SyntaxError: Identifier 'box' has already been declared
+
+    - let 재선언 불가능
+    - const 재선언 불가능
 
 
