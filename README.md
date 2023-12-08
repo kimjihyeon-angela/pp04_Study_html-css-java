@@ -1890,3 +1890,29 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 makeArr.length => 4
 
+- 배열의 메소드
+    - 메서드 : 어떠한 기능을 가지고 있는 명령어로 배열의 메서드(메소드)는 배열에 내장되어 있는 기능임
+        - 
+        <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array#%EC%A0%95%EC%A0%81_%EB%A9%94%EC%84%9C%EB%93%9C" target="_blank">메서드 확인할 수 있는 페이지</a>
+    - push
+        - 배열의 가장 뒤의 데이터를 추가
+        
+                makeArr.push(추가할 데이터)
+    - pop
+        - 배열의 가장 뒤의 데이터를 삭제
+        - push와 다르게 괄호안에 데이터를 넣지 않아도 됨
+
+                makeArr.pop()
+    - includes
+        - 특정 배열에 주어진 데이터가 포함되어 있는지 확인
+        - 포함되어 있는지에 따라 boolean값을 반환함
+
+                makeArr.includes("d")
+                => true
+    - indexOf
+        - 특정 배열에서 지정된 요소를 찾을 수 있는 첫번째 인덱스를 반환
+        - 찾을 수 없으면 -1을 반환함
+
+                makeArr.indexOf("c")
+                => 2
+
