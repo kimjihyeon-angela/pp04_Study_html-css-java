@@ -1916,3 +1916,37 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 makeArr.indexOf("c")
                 => 2
 
+### Day 04
+- 객체
+    - 중괄호 이용({})하여 만듦
+
+            let userData = {
+                name:"김지현",
+                age:28,
+                hight:160,
+                company:"abcCompany"
+            }
+    - key : value의 구성으로 되어 있고 하나의 key와 value를 property라고 함
+
+- 객체 프로퍼티에 접근하기
+    - 점표기법 (Dot notation)
+        - key값에 접근시 점을 이용해서 접근하는 방법
+
+                userData.name => "김지현"
+    - 괄호 표기법 (Bracket notation)
+        - key 값에 접근 시 괄호[]를 이용해서 접근하는 방법
+
+                userData["name"] => "김지현"
+        - 괄호표기법 사용시 "" 붙이지 않으면 key값이 아닌 변수로 인식되기 때문에 주의가 필요함
+
+- 객체 Method
+    - key
+        - 객체의 key만 가져와 배열에 담아주는 메서드
+
+                Object.keys(userData)
+                => ["name", "age", "hight", "company"]
+    - value
+        - 객체의 value만 가져와 배열에 담아주는 메서드
+
+                Object.values(userDate)
+                => ["김지현", "28", "160", "abcCompany"]
