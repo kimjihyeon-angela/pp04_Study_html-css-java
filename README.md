@@ -1950,3 +1950,7 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 Object.values(userDate)
                 => ["김지현", "28", "160", "abcCompany"]
+
+### Day 05
+- 함수
+    - 
