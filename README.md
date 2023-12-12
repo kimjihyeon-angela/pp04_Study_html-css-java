@@ -1952,5 +1952,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 => ["김지현", "28", "160", "abcCompany"]
 
 ### Day 05
-- 함수
-    - 
+- HTML의 기초
+    - head/ body
+    - div, span, input, button태그를 다시 한번 확인함
+    - style 을 body에서 직접 태그에 사용하여 글자 색 변경
+    - head 에서 script를 활용하여 콘솔 창에 원하는 문구 출력
+
