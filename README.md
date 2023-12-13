@@ -1981,3 +1981,42 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 document.querySelector().value
         - document.querySelector('#target-year-input').value
             - target-year-input 아이디를 사용하고 있는 태그에 입력된 값을 불러올 수 있음
+
+- new Date()
+    - 날짜 데이터를 일종의 객체로 관리하며 이 날짜 데이터를 가지고 올 수 있는 방법
+    - new Date 사용 시 사용자의 컴퓨터 시간을 기준으로 현재 날짜, 시간을 모두 구해올 수 있음
+
+- 함수의 반환
+    - return
+    - 결과값을 반환해줌
+    - 함수 종료의 기능을 가지고 있기도 함
+
+- 함수 선언의 종류
+    - 표현식
+        - 변수에 함수를 할당하는 것으로 표현
+        - 호이스팅 영향 받지 않음 => 함수 선언 전 함수가 사용된 경우 error 발생 => 표현식을 사용하는 것이 좋음
+
+                const 함수이름 = function(param1, param2, ...) {
+                    // 
+                    return 결과값
+                }
+    - 선언문
+        - 선언 키워드 존재 x
+        - 호이스팅의 영향을 받게 됨
+        - 호이스팅 = 위로 끌어올려지는 것 => 함수 선언 전 함수가 사용된 경우 아래 선언된 함수를 예측하여 사용
+
+                function 함수이름(param1, param2, ...) {
+                    //
+                    return 결과값
+                }
+    - 화살표 함수
+        - 표현식과 비슷하게 생김
+        - 표현식과 다르게 function이 없고 => 사용됨
+        - 메서드에서 사용할 경우 많이 사용됨
+
+                const sum = () => {
+                    let result = 10 + 10;
+                    return result;
+                }
+
+
