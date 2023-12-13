@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Day Counter</title>
+    <script>
+        // inputBox에서 데이터를 가지고 오는 함수
+        const dateFormMaker = function() {
+            const inputYear = document.querySelector('#target-year-input').value
+            const inputMonth = document.querySelector('#target-month-input').value
+            const inputDate = document.querySelector('#target-date-input').value
+            const dateFormat = inputYear + '-' + inputMonth + '-' + inputDate
+            const dateFormat2 = `${inputYear}-${inputMonth}-${inputDate}`
+            return dateFormat2
+        }
+
+        // 현재 날짜와 inputBox에 입력한 날짜의 count 구하는 함수
+        const counterMake = function() {
+            const nowDate = new Date();
+            const targetDate = new Date(dateFormMaker()).setHours(0, 0, 0, 0);
+            const remaining = (targetDate - nowDate) / 1000;
+            const remainingDate = Math.floor(remaining / 3600 / 24);
+            const remainingHours = Math.floor(remaining / 3600) % 24;
+            const remainingMin = Math.floor(remaining / 60) % 60;
+            const remainingSec = Math.floor(remaining) % 60
+            console.log(remainingDate, remainingHours, remainingMin, remainingSec);
+        }
+    </script>
+</head>
+<body>
+    <h1>D-Day</h1>
+    <div id="d-day-counter">
+        
+    </div>
+    <div id="target-selector">
+        <input id="target-year-input" class="target-input" /> - 
+        <input id="target-month-input" class="target-input" /> - 
+        <input id="target-date-input" class="target-input" />
+    </div>
+    <button onclick="counterMake()">버튼</button>
+</body>
+</html>

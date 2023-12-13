@@ -2019,4 +2019,16 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     return result;
                 }
 
+- local host
+    - 사용자의 컴퓨터 자체를 가리키는 ip 주소의 도메인
+    - local host = 도메인
+    - 127.0.0.1 = ip 주소
+    - local host === 127.0.0.1
+    - DNS = Domain Name System 으로 아이피주소를 도메인으로 변경시켜주는 것
+    - localhost:5500 -> :5500 = 포트번호로 live server가 사용하기 위해 설정해놓은 포트번호
+    - 식당 위치를 말할 때 식당 이름을 이야기 하는 것 => 도메인으로 말하는 것
+    - 식당 위치를 말할 때 식당 주소를 이야기 하는 것 => ip주소로 말하는 것
+    - 5500이라는 식당 문을 live server가 열어놓은 것을 의미함
+
+
 
