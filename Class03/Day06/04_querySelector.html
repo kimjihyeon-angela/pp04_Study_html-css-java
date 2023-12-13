@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <script>
+        const dateFormMaker = function() {
+            const inputYear = document.querySelector('#target-year-input').value
+            const inputMonth = document.querySelector('#target-month-input').value
+            const inputDate = document.querySelector('#target-date-input').value
+            // document.querySelector('#target-year-input') 태그 자체를 가지고 옴
+            // querySelector = 태그 자체를 가지고 올 수 있음
+            // 태그의 값(value)를 가지고 오는 방법 -> document.querySelector().value
+            console.log(document.querySelector('#target-year-input'))
+            console.log(inputYear, inputMonth, inputDate)
+        }
+    </script>
+</head>
+<body>
+    <input id="target-year-input" class="target-input" />
+    <input id="target-month-input" class="target-input" />
+    <input id="target-date-input" class="target-input" />
+    <button onclick="dateFormMaker()">버튼</button>
+</body>
+</html>

@@ -1958,3 +1958,26 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - style 을 body에서 직접 태그에 사용하여 글자 색 변경
     - head 에서 script를 활용하여 콘솔 창에 원하는 문구 출력
 
+### Day 06
+- 함수 선언과 호출
+    - 함수 선언
+
+            const consoleTool = function (){
+                console.log("함수를 실행했어요")
+            }
+    
+    - 함수 호출
+    
+            consoleTool()
+
+- document.querySelector()
+    - 원하는 태그를 불러올 수 있음
+    - 한 태그가 여러개 사용될 경우 #아이디와 .클래스를 이용하여 구분 할 수 있음
+    - document.querySelector('#target-year-input') 사용 시 target-year-input 아이디를 사용하고 있는 태그 자체를 불러옴
+        - 불러오는 결과값 : input id = "target-year-input" class="target-input
+    - 해당 태그의 값(value)을 출력해야할 때
+        - document.querySelector()뒤에 .value 입력해주면 됨
+        
+                document.querySelector().value
+        - document.querySelector('#target-year-input').value
+            - target-year-input 아이디를 사용하고 있는 태그에 입력된 값을 불러올 수 있음
