@@ -2101,3 +2101,13 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - Or 연산자
         - ||
         - 양쪽에 위치한 조건 중, 하나라도 만족하는 경우 true
+    
+    - NOT 연산자
+        - !
+        - boolean의 값을 반전시켜주는 논리 연산자
+        - false(거짓)과 같은 것으로 치는 값
+            - undefined
+            - null
+            - 0
+            - ""
+            - NaN

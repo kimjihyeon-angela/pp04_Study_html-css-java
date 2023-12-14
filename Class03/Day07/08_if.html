@@ -11,8 +11,8 @@
         }
 
         const obj = {
-            name: "Jack",
-            age : 25
+            name: "Jason",
+            age : 19
         }
         if(obj.name === "Jason") {
             console.log("안녕, " + obj.name)
@@ -22,6 +22,20 @@
         }
         else{
             console.log('you are not our member')
+        }
+
+        if(obj.name === 'Jason' || obj.name==='Peter'){
+            console.log('안녕, '+ obj.name) 
+        }
+        else{
+            console.log("우리 멤버가 아닙니다.")
+        }
+
+        if(obj.name === 'Jason' && obj.age >= 20){
+            console.log('안녕, ' + obj.name+ ' 너의 나이는 ', obj.age)
+        }
+        else{
+            console.log('돌아가')
         }
     </script>
 </head>
