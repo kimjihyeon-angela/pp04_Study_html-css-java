@@ -2050,3 +2050,54 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 1 === '1'
                 => false
 
+### Day 07
+- 배열과 객체의 비교
+    - 원시타입
+        - Primitive type
+        - String, Number, Boolean, Bigint, undefined, Symbol, Null => 데이터타입
+        - 불변성 => 데이터 변화하지 않음
+
+    - 참조타입
+        - Reference type
+        - 원시타입 이외의 모든 것
+
+                let arr = [1, 2, 3]
+
+                arr === [1, 2, 3] => false
+                주소값까지 비교하기 때문에 false가 나옴
+
+- 조건문
+    - 로직의 실행조건
+    - if 문
+        - 데이터가 특정조건에 해당하는 경우 작성한 코드 진행 해당하지 않을 경우 코드 진행하지 않음
+        - if(조건식 입력) {조건이 성립(true를 return 하는 경우)하면 실행되는 코드}
+        
+                let name = "Jason"
+                if(name === "Jason") {
+                    console.log("Hi, Jason")
+                }
+    - elseif 
+        - if문에서 true에 해당하지 않은 경우
+
+                const obj = {
+                    name: "Peter",
+                    age : 25
+                }
+                if(obj.name === "Jason") {
+                    console.log("안녕, " + obj.name)
+                }
+                else if(obj.name === 'Peter'){
+                    console.log('안녕, ' + obj.name)
+                }
+                else{
+                    console.log('you are not a member!')
+                }
+
+- 논리 연산자
+    - And 연산자
+        - &&
+        - 양쪽에 위치한 조건을 모두 만족하는 경우 true
+    
+    - Or 연산자
+        - ||
+        - 양쪽에 위치한 조건 중, 하나라도 만족하는 경우 true
