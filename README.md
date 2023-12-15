@@ -2133,6 +2133,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             
                     i = i + 1
         
-                for(let i = 0; i< 10; i = i + 1) {
-                    console.loe(i)
-                }
+                    for(let i = 0; i< 10; i = i + 1) {
+                        console.loe(i)
+                    }
