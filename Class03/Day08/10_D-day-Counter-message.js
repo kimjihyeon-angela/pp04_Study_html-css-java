@@ -54,7 +54,7 @@ const counterMake = function() {
     }
     console.log(remainingObj);
 
-    const days = document.getElementById('days')
+    // const days = document.getElementById('days')
     // Id값으로 가지고 올 경우 getElementById를 이용할 경우 querySelector와 다르게 # 안적어도 해당 Id값을 가지고 옴
     // const hours = document.querySelector('#hours')
     // const min = document.querySelector('#min')

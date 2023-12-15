@@ -54,7 +54,7 @@ const counterMake = function() {
     }
     console.log(remainingObj);
 
-    const days = document.getElementById('days')
+    // const days = document.getElementById('days')
     // Id값으로 가지고 올 경우 getElementById를 이용할 경우 querySelector와 다르게 # 안적어도 해당 Id값을 가지고 옴
     // const hours = document.querySelector('#hours')
     // const min = document.querySelector('#min')
@@ -69,9 +69,45 @@ const counterMake = function() {
     }
     console.log(documentObj)
 
-    documentObj['days'].textContent = remainingObj.remainingDate;
-    documentObj['hours'].textContent = remainingObj.remainingHours;
-    documentObj['min'].textContent = remainingObj.remainingMin;
-    documentObj['sec'].textContent = remainingObj.remainingSec;
+    const timeKeys = Object.keys(remainingObj)
+    const docKeys = Object.keys(documentObj)
+    console.log(timeKeys)
+    // remainingObj 배열 출력됨
+    console.log(docKeys)
+    // documentObj 배열 출력됨
+
+    for (let i = 0; i < timeKeys.length; i = i + 1){
+        console.log(timeKeys[i])
+        /*
+            remainingDate
+            remainingHours
+            remainingMin
+            remainingSec
+            이 출력됨
+        */
+       console.log(docKeys[i])
+       /*
+            0: days
+            1: hours
+            2: min
+            3: sec
+            이 배열로 출력됨
+       */
+       console.log(documentObj[docKeys[i]]) // 태그를 가지고 올 수 있음
+       /*
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="min"></span>
+            <span id="sec"></span>
+            이 출력됨
+       */
+
+       documentObj[docKeys[i]].textContent = remainingObj[timeKeys[i]]
+    }
+
+    // documentObj['days'].textContent = remainingObj.remainingDate;
+    // documentObj['hours'].textContent = remainingObj.remainingHours;
+    // documentObj['min'].textContent = remainingObj.remainingMin;
+    // documentObj['sec'].textContent = remainingObj.remainingSec;
     // 객체에서 해당 값 가져오는 방법 2가지 [''] 사용/ . 사용
 }

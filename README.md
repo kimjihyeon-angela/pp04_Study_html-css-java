@@ -2141,6 +2141,43 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             
                     i = i + 1
 
+        - 11_D-day-Counter-repetition 코드 복습
+
+                // 남은 시간을 계산한 날짜, 시간, 분, 초를 모아놓은 객체
+                const remainingObj = {
+                    remainingDate: Math.floor(remaining / 3600 / 24),
+                    remainingHours: Math.floor(remaining / 3600) % 24,
+                    remainingMin: Math.floor(remaining / 60) % 60,
+                    remainingSec: Math.floor(remaining) % 60
+                }
+                -> 객체 사용 안할 경우 각각 변수로 설정해 줘야함
+
+                // 해당 아이디값을 가지고 있는 태그들을 모아놓은 객체
+                const documentObj = {
+                    days : document.getElementById('days'),
+                    hours : document.querySelector('#hours'),
+                    min : document.querySelector('#min'),
+                    sec : document.querySelector('#sec')
+                }
+                -> 객체 사용 안할 경우 각각 변수로 설정해 줘야함
+
+                // 남은시간을 모아놓은 객체의 key값에 대한 변수 설정
+                const timeKeys = Object.keys(remainingObj)
+
+                // 태그를 모아놓은 객체의 key값에 대한 변수 설정
+                const docKeys = Object.keys(documentObj)
+
+                // 태그에 시간을 넣는 반복문
+                for(let i = 0; i < timeKeys.length; i = i + 1){
+                    documentObj[docKeys[i]].textContent = remainingObj[timeKeys[i]]
+                }
+
+                // 반복문 사용 안 할 경우 태그에 시간을 넣는 방법
+                documentObj['days'].textContent = remainingObj.remainingDate;
+                documentObj['hours'].textContent = remainingObj.remainingHours;
+                documentObj['min'].textContent = remainingObj.remainingMin;
+                documentObj['sec'].textContent = remainingObj.remainingSec;
+
     - while 문
         - 종료조건을 제대로 설정하지 않으면 무한 반복됨
         - 예시
