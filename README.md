@@ -2121,7 +2121,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 for(let i = 0; i< 10; i = i + 1) {
                     console.loe(i)
                 }
-                
+
+                => 0~9까지 출력됨
+
         - 최초식
             - 반복문에서 반복의 기준이 됨
             - 반복문 안에서만 적용됨
@@ -2138,3 +2140,45 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - i가 계속 재할당되다가 10보다 작지 않은 경우가 되면 반복문이 종료됨
             
                     i = i + 1
+
+    - while 문
+        - 종료조건을 제대로 설정하지 않으면 무한 반복됨
+        - 예시
+
+                let i = 0;
+
+                while (i<10){
+                    console.log(i)
+                    i = i + 1
+                }
+
+                => 0 ~ 10이 출력됨
+
+                let i = 0;
+                let status = true
+
+                while(status === true){
+                    console.log(i)
+
+                    if (i>10){
+                        status = false
+                    }
+
+                    i = i + 1
+                }
+        
+        - 최초식
+            - for문과 다르게 최초식이 while문 밖에 위치함
+
+                    let i = 0
+        
+        - 조건식
+            - 괄호 안에 위치함
+
+                    i < 10
+
+        - 증감문
+            - 코드 안에 위치함
+
+                    i = i + 1
+    
