@@ -2132,7 +2132,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - i가 계속 재할당되다가 10보다 작지 않은 경우가 되면 반복문이 종료됨
             
                     i = i + 1
-        
-                    for(let i = 0; i< 10; i = i + 1) {
-                        console.loe(i)
-                    }
+        - for문 예시
+
+                for(let i = 0; i< 10; i = i + 1) {
+                    console.loe(i)
+                }
