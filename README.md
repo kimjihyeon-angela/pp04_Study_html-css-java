@@ -2219,3 +2219,49 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                     i = i + 1
     
+    - for in
+        - 객체에서 사용
+        - 사용할 객체 안에 있는 키들을 변수명(key)으로 받아오겠다
+        - for in 사용하기 전에는 객체를 하나하나 돌면서 key 값을 받아왔
+        
+                for (let key in 사용할 객체) {
+                    console.log(key)
+                }
+
+- 시간반복
+    - setTimeout()
+        - for문을 활용하여 특정시간동안 반복되는 함수를 만들 수 있음
+
+                for(let i = 0; i < 100; i++>){
+                    setTimeout(() => {
+                        counterMaker();
+                    }, 1000*i)
+                }
+        - 1000 === 1000ms === 1s
+        - 1000 * i 해주는 이유 : 1초씩 뒤에 해당 함수를 실행하기 위해서임
+        - i가 100보다 작을때까지만 반복되는 문제점 발생
+
+    - setInterval()
+        - javaScript에 내장되어 있는 함수로 for문 없이 setTimeout처럼 시간간격을 두고 함수를 실행할 수 있도록 만듦
+        
+                setInterval(counterMaker, 1000);
+        - 1초에 한번씩 해당 함수를 실행
+        - 1초 뒤부터 해당 함수가 실행되기 때문에 countdown 할 때 0부터 나오는 문제가 발생함
+            - 해당함수를 먼저 한번 실행하여 0부터 나오는 문제 해결
+
+    - clearInterval()
+        - 새로고침버튼을 눌러야 타이머가 종료됨
+        - clearInterval 활용하여 타이머를 종료시킬 수 있음
+        - 버튼을 누를때마다 숫자가 1에서부터 늘어나는 것을 확인함
+            - intervalId 변수로 숫자를 확인해봄
+        - 숫자가 계속 늘어나는데 숫자만큼 clearInterval을 실행해줘야 타이머가 멈추는 것도 확인함
+            - intervalId를 넣을 배열이 필요함
+            - intervalIdArr 변수를 이용하여 해당 숫자를 대입해줌(intervalId 만들어 내는 함수에서)
+                - 문제발생
+                    - clearInterval()함수에서 해당 배열을 가지고 오지 못함
+                    - push를 이용하였지만 해당 배열에 값이 계속 1개만 추가됨을 확인함
+                - 원인
+                    - 지역변수로 intervalIdArr을 설정하였기 때문에 다른 함수인 clearInterval에서는 해당 배열의 존재를 알지 못함
+                    - 버튼을 누를때마다 intervalIdArr을 새로 설정하였기 때문에 계속 reset이 되고 있었음
+                - 해결
+                    - 전역변수로 intervalIdArr을 설정해줌으로써 위 두개의 문제를 동시에 해결할 수 있음
