@@ -2265,3 +2265,6 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     - 버튼을 누를때마다 intervalIdArr을 새로 설정하였기 때문에 계속 reset이 되고 있었음
                 - 해결
                     - 전역변수로 intervalIdArr을 설정해줌으로써 위 두개의 문제를 동시에 해결할 수 있음
+
+## Day 09
+- 
