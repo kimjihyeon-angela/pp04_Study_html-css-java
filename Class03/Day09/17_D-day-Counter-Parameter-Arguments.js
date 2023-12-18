@@ -28,12 +28,18 @@ const dateFormMaker = function() {
     -> counterMaker에 있던 targetDateInput 함수를 starter 함수에서 사용하면 됨 
     => dateFormMaker 함수에서 counterMaker로 받던 dateFormat을 받을 수 없게 됨 (연결이 끊어진 것임)
     => 전달인자, 매개변수를 통해 받을 수 있게 됨
+
+    // 10 이하로 떨어졌을 때 앞에 0이 나올 수 있도록 만들어 주기
+        - counterMaker 함수에서 format이라는 함수를 새로 정의
+        - 10보다 작을 경우 '0' + 매개변수 출력
+        - 아닐경우 매개변수 출력
 */
 
-const counterMaker = function() {
+const counterMaker = function(data) {
+    console.log(data)
     // const targetDateInput = dateFormMaker();
     const nowDate = new Date();
-    const targetDate = new Date(targetDateInput).setHours(0, 0, 0, 0);
+    const targetDate = new Date(data).setHours(0, 0, 0, 0);
     const remaining = (targetDate - nowDate) / 1000;
     if(remaining <= 0) {
         console.log('타이머가 종료되었습니다.');
@@ -70,10 +76,21 @@ const counterMaker = function() {
     const documentArr = ['days', 'hours', 'min', 'sec']
 
     const timeKeys = Object.keys(remainingObj)
+
+    const format = function (time) {
+        if (time < 10) {
+            return '0' + time;
+        }
+        else{
+            return time;
+        }
+    }
     
     let i = 0;
     for (let tag of documentArr){
-        document.getElementById(tag).textContent = remainingObj[timeKeys[i]]
+        const remainingTime = format(remainingObj[timeKeys[i]])
+        // console.log(remainingTime)
+        document.getElementById(tag).textContent = remainingTime
         i++
     }
 }
@@ -83,9 +100,10 @@ const starter = function() {
     
     container.style.display = 'flex'
     messageContainer.style.display = 'none'
+    setClearInterval()
     
-    counterMaker()
-    const intervalId = setInterval(counterMaker, 1000);
+    counterMaker(targetDateInput)
+    const intervalId = setInterval(() => counterMaker(targetDateInput), 1000);
     console.log(intervalId) 
 
     intervalIdArr.push(intervalId)

@@ -2299,7 +2299,26 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
             sum2(10, 20) => 30
     
-
-
 - Web Storage
     - 브라우저 내에 존재하는 데이터 저장소
+    - Session Storage
+        - key-value 형태 저장
+        - 로컬 환경에 데이터 저장
+        - 세션 단위로 구분되며 활용
+            - 세션 : 사용자가 브라우저를 통해 웹페이지에 접속한 시점부터 해당 웹페이지 접속을 종료하는 시점까지 의미하는 단위
+            - 세션 : 사용자의 웹페이지 접속 상태에 따른 단위
+        - 브라우저, 탭을 종료하면 영구 삭제됨
+    
+    - Local Storage
+        - key-value 형태 저장
+        - 로컬 환경에 데이터 저장
+        - 도메인 단위로 구분되며 활용
+        - 브라우저 자체를 종료해도 존재함
+
+- local storage 접근 방법
+    - local storage에 데이터 저장 : localStorage.setItem('key', value)
+    - local storage에 저장되어 있는 데이터 접근 : localStorage.getItem('key')
+    - local storage에 저장되어 있는 데이터 삭제 : localStorage.removeItem('key')
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/d-day-counter.gif" width="600"/>
+
