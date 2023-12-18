@@ -2322,3 +2322,49 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/d-day-counter.gif" width="600"/>
 
+- ul/ol/li 태그
+    - ul 태그
+        - unordered list
+        - 순서가 없는 목록
+        - 검은 점으로 항목들을 표현함
+        - ul태그만을 작성하면 목록이 출력되지 않음 => li태그와 함께 사용해야함
+
+                <ol>
+                    <li>항목</li>
+                    <li>항목</li>
+                    <li>항목</li>
+                </ol>
+            
+            <ol>
+            <li>항목</li>
+            <li>항목</li>
+            <li>항목</li>
+            </ol>
+
+    - ol 태그
+        - ordered list
+        - 순서가 정해진 목록
+        - 숫자에 항목들을 할당해서 나열
+        - ol태그만을 작성하면 목록이 출력되지 않음 => li 태그와 함께 사용해야함
+
+                <ol>
+                    <li>1번 항목</li>
+                    <li>2번 항목</li>
+                    <li>3번 항목</li>
+                </ol>
+        
+        <ol>
+        <li>1번 항목</li>
+        <li>2번 항목</li>
+        <li>3번 항목</li>
+        </ol>
+
+- DOM
+    - Document Object Model
+    - 브라우저가 HTML 문서를 파싱(해석)하는 과정에서 생겨나는 객체
+    - 트리구조를 가짐
+
+            console.dir(document.childNodes[].childNodes)
+            => 자식 노드의 자식노드 등으로 찾아 내려갈 수 있음
+
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/dom.png" width="600"/>
