@@ -2267,4 +2267,39 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                     - 전역변수로 intervalIdArr을 설정해줌으로써 위 두개의 문제를 동시에 해결할 수 있음
 
 ## Day 09
-- 
+- 전달인자, 매개변수
+    - 함수의 외부에서 데이터를 전달받아 내부에서 활용하기 위한 수단
+    
+- 매개변수
+    - parameter
+    - 함수를 선언할 때 소괄호 안에 정의되는 변수
+
+            const sum = function(a, b) {
+                console.log(a)
+                console.log(b)
+            }
+
+            sum() => undefined
+                     undefined 출력
+
+            const sum2 = function(a, b) {
+                let result = a + b;
+                return result;
+            }
+
+- 전달인자
+    - arguments
+    - 함수를 호출할 때, 함수 내부로 전달되는 데이터
+
+            sum(10) => 10
+                       undefined 출력
+            
+            sum(10, 20) => 10
+                           20 출력
+
+            sum2(10, 20) => 30
+    
+
+
+- Web Storage
+    - 브라우저 내에 존재하는 데이터 저장소
