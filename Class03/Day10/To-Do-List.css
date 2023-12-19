@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.todo-container{
+    max-width: 100%;
+    width: 400px;
+}
+
+#todo_input{
+    list-style-type: none;
+    border: 1px dashed burlywood;
+    display: block;
+    font-size: 18px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#todo_list{
+    list-style: none;
+    background-color: antiquewhite;
+    margin: 0 10;
+    padding: 0;
+    /* border-top: 1px dashed burlywood; */
+}
+
+#todo_list li{
+    /* border-top: 1px dashed burlywood; */
+    border-bottom: 1px dashed burlywood;
+    font-size: 15px;
+    user-select: none;
+}
+
+li button{
+    /* background-color: ; */
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:active {
+    border: 1px solid brown;
+}
+
+.complete {
+    color: rgb(155, 155, 155);
+    text-decoration: line-through;
+}

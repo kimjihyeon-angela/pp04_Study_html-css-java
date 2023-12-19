@@ -2368,3 +2368,5 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             => 자식 노드의 자식노드 등으로 찾아 내려갈 수 있음
 
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/dom.png" width="600"/>
+
+### Day 10
