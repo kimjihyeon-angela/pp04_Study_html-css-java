@@ -58,3 +58,15 @@ li button:active {
     color: rgb(155, 155, 155);
     text-decoration: line-through;
 }
+
+.delete-btn-wrapper{
+    margin-top: 1rem;
+}
+
+.delete-btn-wrapper button{
+    font-weight: bold;
+    background-color: burlywood;
+    border: 1px solid burlywood;
+    cursor: pointer;
+    padding: 3px 5px;
+}

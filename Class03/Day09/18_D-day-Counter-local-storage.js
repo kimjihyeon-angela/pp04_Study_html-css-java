@@ -97,9 +97,6 @@ const starter = function(targetDateInput) {
         targetDateInput = dateFormMaker();
     }
 
-    
-    
-    
     container.style.display = 'flex'
     messageContainer.style.display = 'none'
     setClearInterval()
