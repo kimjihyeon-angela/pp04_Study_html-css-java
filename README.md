@@ -2371,4 +2371,74 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 ### Day 10
 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/pp04_Study_html-css-java/main/image/Todo-List.gif" width="600"/>
-    
+
+### Day 11
+- 스코프
+    - 변수 참조의 유효범위
+    - 전역 스코프
+        - global scope
+        - 전체
+
+                let x = 0;
+                let y = 1;
+                const scopeTest = function () {
+                    let z = 2;
+                    console.log(x);
+                    console.log(y);
+                    console.log(z);
+                    => x, y, z의 값 0, 1, 2가 다 출력됨
+                }
+                console.log(x);
+                console.log(y);
+                console.log(z);
+                => x, y의 값 0, 1은 출력되지만 z는 undefined 에러 발생함
+
+
+    - 지역 스코프
+        - local scope
+        - 함수 내, 특정 지역 내
+        - 함수레벨 스코프
+            - 함수를 실행할 때 생겨나는 지역 스코프
+
+                    const sum = function () {
+                        var x = 0;
+                    }
+
+                    console.log(x)
+
+                    => undefined 출력됨
+
+                    const sum2 = function() {
+                        let x = 0;
+                    }
+
+                    console.log(x)
+
+                    => undefined 에러 발생
+
+        - 블록레벨 스코프
+            - 코드 블록에 의해서 생성되는 스코프
+            - if, for, while문 등 중괄호를 사용해서 코드 블록을 작성하는 환경에서 생성됨
+
+                    if() {
+                        var y = 0;
+                    }
+
+                    console.log(y)
+                    
+                    => 정상적으로 값(0)이 출력됨 => var사용 지양
+                    
+                    if() {
+                        let y = 0;
+                    }
+
+                    console.log(y)
+                    
+                    => undefined 에러 발생
+
+- 실행 컨텍스트
+    - debugger 기능 사용시 각 함수에 의해 생성되는 변수, 변수의 호이스팅 등을 확인할 수 있는데 이때 해당 정보들을 담고 있는 것
+    - 각 함수 실행될 때마다 고유한 실행 컨텍스트가 생성됨
+
+- 
+
