@@ -2505,6 +2505,16 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 - http
     - Hyper Text Transfer Protocol
     - 서버와 클라이언트가 통신하기 위해 정의된 규약
-    - 
+
+### Day 13
+- http
+    - request Method
+        - get : 서버의 데이터를 조회하는 Method (HTTP message에 요청 바디를 담아줄 수 없음)
+        - post
+        - put
+        - patch
+        - delete
+        - option
+
 
 
