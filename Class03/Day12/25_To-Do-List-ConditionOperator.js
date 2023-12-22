@@ -28,9 +28,6 @@ const createTodo = function(storageData) {
         saveItemsFn()
     })
 
-    // storageData에 complete 값이 들어오지 않았을 경우 에러 발생함 => ?(optional chaining)를 사용하여 값이 있는 경우에만 비교할 수 있도록 해줌
-    // optional chining이 없을 경우 조건식이 2개 필요
-    // if(storageData && storageData.complete)
     if(storageData?.complete){
         newLi.classList.add('complete')
     }
@@ -73,30 +70,19 @@ const saveItemsFn = function() {
         }
         saveItems.push(todoObj)
     }
-    // console.log(saveItems)
-    
-    // 배열을 문자열로 바꿔줘야함
-    // console.log(String(saveItems))
-    // [object Object]가 출력됨
-
-    //배열 자체를 문자열로 바꿔줘야 함
-    // console.log(JSON.stringify(saveItems))
-    // [{"contents":"1","complete":false}] 로 출력됨 => 모두 ""로 묶여서 출력됨
-
-    // 문자열인지 확인하는 방법 => typeof
-    // console.log(typeof JSON.stringify(saveItems))
-    // string 출력됨
+    // 삼항연산자 활용하여 아래 조건식 간단하게 변경
+    saveItems.length === 0 
+    ? localStorage.removeItem('saved-items')
+    : localStorage.setItem('saved-items', JSON.stringify(saveItems))
 
     // 빈 배열인 경우 데이터 저장 안함
-    if(saveItems.length === 0){
-        localStorage.removeItem('saved-items')
-    }
-    else{
-        // localStorage에 저장
-        localStorage.setItem('saved-items', JSON.stringify(saveItems))
-    }
-
-    
+    // if(saveItems.length === 0){
+    //     localStorage.removeItem('saved-items')
+    // }
+    // else{
+    //     // localStorage에 저장
+    //     localStorage.setItem('saved-items', JSON.stringify(saveItems))
+    // }
 }
 
 // localStorage에 있는 데이터 확인 후 꺼내오기
