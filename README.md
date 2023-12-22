@@ -2502,5 +2502,9 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 - API
     - 어떠한 프로그램에서 제공하는 기능을 사용자가 활용할 수 있도록 만들어 둔 인터페이스
 
+- http
+    - Hyper Text Transfer Protocol
+    - 서버와 클라이언트가 통신하기 위해 정의된 규약
+    - 
 
 
