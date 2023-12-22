@@ -2440,5 +2440,55 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - debugger 기능 사용시 각 함수에 의해 생성되는 변수, 변수의 호이스팅 등을 확인할 수 있는데 이때 해당 정보들을 담고 있는 것
     - 각 함수 실행될 때마다 고유한 실행 컨텍스트가 생성됨
 
-- 
+- 호이스팅
+
+        console.log(letKeyword)
+        let letKeyword = 'let is safe'
+
+        => letKeyword is not defined 에러 발생함
+
+        console.log(varKeyword)
+        var varKeyword = 'var is not safe'
+
+        => undefined 출력됨
+
+        fn1()
+
+        function fn1() {
+            console.log("hoisting occurred')
+        }
+
+        => hoisting occurred 출력됨
+
+        fn2()
+        const fn2 = function(){
+            console.log("error occurred")
+        }
+
+        => fn2 is not defined 에러 발생함
+
+    - 호이스팅 : 위로 끌어 올려지는 것처럼 동작하는 것
+    - var 키워드의 경우 선언부가 위쪽으로 올라가서 해석이 됨 => 선언만하고 할당은 안되어 있기 때문에 undefined가 출력되는 것임
+    - 변수만 호이스팅 발생하는 것 x => 함수도 호이스팅 발생함 (함수 선언식으로 정의된 경우)
+    - 변수 선언 단계
+        - 선언단계
+            - 선언한 변수를 식별자가 담기는 객체에 할당하는 단계
+        - 초기화 단계
+            - 변수에 할당할 메모리 공간을 부여하는 단계
+        - 할당 단계
+            - 정의된 변수에 데이터가 할당되는 단계
+
+### Day 12
+- 호이스팅
+    - let, const 는 선언단계, 초기화단계가 분리되어 실행됨
+    - let, const가 호이스팅이 발생하지 않는 것은 아님
+    - 선언 코드 만나기 전 참조 시도하면 에러 발생하는 이유
+        - TDZ때문 
+            - Temporal Dead Zone
+            - 선언단계와 초기화 단계 사이에 존재
+            - 초기화 단계를 거치기 전 TDZ공간에 머무르는 변수를 참조하려 시도하면 참조에러(Reference Error)발생
+    - var 키워드의 경우 선언단계, 초기화단계가 함께 실행되기 때문에 TDZ존재하지 않음
+
+
+
 

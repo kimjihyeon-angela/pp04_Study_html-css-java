@@ -5,12 +5,6 @@ const savedTodoList = JSON.parse(localStorage.getItem('saved-items'))
 
 // console.log(savedTodoList) // 저장되어 있는 문자열이 (객체형태로)출력됨 
 
-if(savedTodoList) {
-    for(let i = 0; i < savedTodoList.length; i++){
-        createTodo(savedTodoList[i])
-    }
-}
-
 const createTodo = function(storageData) {
     let todoContents = todoInput.value;
     if(storageData) {
@@ -31,7 +25,15 @@ const createTodo = function(storageData) {
     newLi.addEventListener('dblclick', () => {
         // console.log('더블클릭')
         newLi.remove()
+        saveItemsFn()
     })
+
+    // storageData에 complete 값이 들어오지 않았을 경우 에러 발생함 => ?(optional chaining)를 사용하여 값이 있는 경우에만 비교할 수 있도록 해줌
+    // optional chining이 없을 경우 조건식이 2개 필요
+    // if(storageData && storageData.complete)
+    if(storageData?.complete){
+        newLi.classList.add('complete')
+    }
     
     newSpan.textContent = todoContents
     newLi.appendChild(newBtn)
@@ -41,6 +43,8 @@ const createTodo = function(storageData) {
     todoInput.value = ''
     saveItemsFn()
 }
+
+
 
 const keyCodeCheck = function () {
     if(window.event.keyCode === 13 && todoInput.value !== ''){
@@ -56,6 +60,7 @@ const deleteAll = function () {
         // console.log(liList[i])
         liList[i].remove()
     }
+    saveItemsFn()
 }
 
 const saveItemsFn = function() {
@@ -87,3 +92,8 @@ const saveItemsFn = function() {
 }
 
 // localStorage에 있는 데이터 확인 후 꺼내오기
+if(savedTodoList) {
+    for(let i = 0; i < savedTodoList.length; i++){
+        createTodo(savedTodoList[i])
+    }
+}
