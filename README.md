@@ -2489,6 +2489,18 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             - 초기화 단계를 거치기 전 TDZ공간에 머무르는 변수를 참조하려 시도하면 참조에러(Reference Error)발생
     - var 키워드의 경우 선언단계, 초기화단계가 함께 실행되기 때문에 TDZ존재하지 않음
 
+- geoLocation
+    - 현재 사용자의 위치값을 얻어올 수 있는 API
+    - navigator.geolocation 객체를 통해 사용할 수 있음
+    - 현재 위치 가져오는 방법 : getCurrentPosition()메서드 사용
+    - position.coords 객체로 위도, 경도 등을 받아옴
+    - 원하는 정보(위도, 경도)만 이용하기 위하여 새로운 객체를 이용하여 저장
+
+- open Weather Map
+    - open API 이용
+
+- API
+    - 어떠한 프로그램에서 제공하는 기능을 사용자가 활용할 수 있도록 만들어 둔 인터페이스
 
 
 
