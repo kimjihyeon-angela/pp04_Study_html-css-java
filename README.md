@@ -2551,14 +2551,58 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
                 => 코드 실행 시 1, 3이 먼저 출력된 후 2초 뒤 2가 출력됨을 볼 수 있음
         - 동기식으로 작동될 경우 1출력된 후 2초 후 2출력되고 3이 출력되어야 하는데 다르게 작동함
 
-- stack
-    - Last In First Out (LIFO)
-    - 먼저 들어온 함수, 데이터가 가장 마지막에 처리되는 구조
+- 자료구조
+    - 컴퓨터의 데이터를 효율적으로 관리하기 위해 만들어 놓은 데이터 관리 체계
+    - stack
+        - Last In First Out (LIFO)
+        - 먼저 들어온 함수, 데이터가 가장 마지막에 처리되는 구조
 
-- queue
-    - First In First Out (FIFO)
-    - 먼저들어온 함수, 데이터가 가장 먼저 처리되는 구조
+    - queue
+        - First In First Out (FIFO)
+        - 먼저들어온 함수, 데이터가 가장 먼저 처리되는 구조
 
+- call stack
+    - 함수가 담겨지는 공간
+
+            const func3 = function() {
+                console.log("func3 call")
+            }
+
+            const func2 = function() {
+                func3()
+                console.log("func2 call")
+            }
+
+            const func1 = function() {
+                func2()
+                console.log("func1 call")
+            }
+
+            func1()
+
+            => func3 call func2 call func1 call 순으로 출력됨
+
+- callback queue
+    - Web APIs(비동기 함수)
+        - DOM
+        - setTimeout()
+        - setInterval()
+    - 함수를 실행하는 도중에 콜백함수(Web APIs)가 호출된 경우
+        - callback queue로 들어와서 call stack이 비워지기를 기다림
+        - call stack에 들어있던 함수가 다 종료되면 callback queue에 있던 함수가 call stack으로 들어가짐
+
+- Promise 객체
+    - 비동기적으로 동작시켜줘야 함
+    - 데이터를 현재 얻을 수 없지만 추후 작업이 완료되면 받아올 수 있는 데이터에 대한 접근 수단의 역할
+    - 상태
+        - pending(대기) : 비동기 처리가 아직 완료되지 않은 상태를 의미
+        - fulfilled(이행) : 비동기 처리가 완료되어 결과값을 반환해준 상태
+        - rejected(실패) : 비동기 처리가 실패 혹은 오류가 발생한 상태
+
+- then, catch
+    - then => 요청이 완료된 경우 익명함수 실행
+    - then 뒤에 then을 이어서 사용하기 가능
+    - catch => then이 실패한 경우 catch에서 작성한 익명함수 실행
 
 
 
