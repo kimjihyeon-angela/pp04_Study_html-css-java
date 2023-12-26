@@ -2538,6 +2538,18 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             3. 그와 동시에 다음 손님의 주문 진행
     
     - JavaScript의 경우 동기적으로 작동함
+        - call stack, callback queue라는 영역으로 인해 비동기처럼 작동하기도 함
+
+                console.log("1")
+
+                setTimeout(() => {
+                    console.log("2")
+                }, 2000)
+
+                console.log("3")
+
+                => 코드 실행 시 1, 3이 먼저 출력된 후 2초 뒤 2가 출력됨을 볼 수 있음
+        - 동기식으로 작동될 경우 1출력된 후 2초 후 2출력되고 3이 출력되어야 하는데 다르게 작동함
 
 - stack
     - Last In First Out (LIFO)
