@@ -2639,7 +2639,20 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
                 console.log(name, gender) => otter, male
 
+- spread 연산자
+    - 하나로 뭉쳐있는 값들의 집합을 전개해주는 연산자
+    
+            let arr = [1, 2, 3, 4, 5]
 
+            console.log(arr) => [1, 2, 3, 4, 5]
+            console.log(...arr) => 1, 2, 3, 4, 5
+    
+    - 문자열에서도 사용 가능
+
+            let str = "Hello"
+            
+            console.log(...str) => "H""e""l""l""o"
+    
 
 
 
