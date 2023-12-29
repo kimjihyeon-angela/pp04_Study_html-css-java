@@ -2604,6 +2604,41 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
     - then 뒤에 then을 이어서 사용하기 가능
     - catch => then이 실패한 경우 catch에서 작성한 익명함수 실행
 
+### Day 14
+- 구조분해할당
+    - destructuring assignment
+    - 구조화 되어 있는 배열, 객체와 같은 데이터를 destructuring(분해) 시켜 각각의 변수에 담는 것
+    
+            let arr = [1, 2, 3, 4, 5]
+
+            let one = arr[0]
+            let two = arr[1]
+
+            console.log(one, two) => 1, 2
+
+    - 배열 구조분해할당
+        - 배열 선언
+        - let [변수로 사용할 문자, 변수로 사용할 문자] = 배열
+
+                let arr = [1, 2, 3]
+                let [one, two] = arr
+
+                console.log(one, two) => 1, 2
+                console.log(arr) => [1, 2, 3]
+
+    - 객체 구조분해할당
+        - 객체 선언
+        - let {변수로 사용할 문자, 변수로 사용할 문자} = 객체
+
+                let obj = {
+                    name:"otter",
+                    gender:"male"
+                }
+
+                let {name, gender} = obj
+
+                console.log(name, gender) => otter, male
+
 
 
 
