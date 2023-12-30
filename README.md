@@ -2673,6 +2673,8 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
 
 - 깊은 복사
     - 실제 데이터까지 복사
-    - 
+    - JSON.stringify를 활용하여 JSON 형태(string으로 이루어져 있음)로 복사
+    - 그 후 JSON.parse를 활용하여 원래 형태로 변환시켜 깊은 복사가 이루어짐
+    
 
 
