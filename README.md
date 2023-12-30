@@ -2653,7 +2653,26 @@ HTML/CSS, JavaScript에 대한 부족한 지식을 채우기 위한 공부용
             
             console.log(...str) => "H""e""l""l""o"
     
+### Day 15
+- 얕은 복사
+    - 주소값까지만 복사
+    - 스프레드 연산자 활용하여 복사
+    - 객체 안에 객체가 존재할 경우 제대로 복사되지 않는 문제점 발생
 
+            let origin = {
+                name : "otter",
+                age : 25
+            }
 
+            let copy = origin
+            origin.name => otter
+
+            copy.name = "rabbit"
+
+            origin.name => rabbit
+
+- 깊은 복사
+    - 실제 데이터까지 복사
+    - 
 
 
