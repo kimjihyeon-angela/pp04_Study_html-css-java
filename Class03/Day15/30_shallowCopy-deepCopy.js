@@ -33,31 +33,35 @@ console.log(deepCopy)
 // '{"name":"otter","gender":"male","hobby":{"one":"a","two":"b"}}'
 
 deepCopy2 = JSON.parse(deepCopy)
+
+deepCopy2
 /*
 {name: 'otter', gender: 'male', hobby: {…}}
-gender
-: 
-"male"
-hobby
-: 
-one
-: 
-"a"
-two
-: 
-"b"
-[[Prototype]]
-: 
-Object
-name
-: 
-"otter"
-[[Prototype]]
-: 
-Object
+gender : "male"
+hobby : {one : "abc", two : "b"}
+name : "otter"
+[[Prototype]] : Object
 */
 
+deepCopy2.hobby.two = 123
 
+deepCopy2
+/*
+{name: 'otter', gender: 'male', hobby: {…}}
+gender : "male"
+hobby : {one : "abc", two : "123"}
+name : "otter"
+[[Prototype]] : Object
+*/
+
+obj
+/*
+{name: 'otter', gender: 'male', hobby: {…}}
+gender : "male"
+hobby : {one : "abc", two : "b"}
+name : "otter"
+[[Prototype]] : Object
+*/
 
 
 
