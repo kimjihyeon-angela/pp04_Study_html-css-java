@@ -1,6 +1,7 @@
 const todoInput = document.querySelector('#todo_input');
 const todoList = document.querySelector('#todo_list')
 const savedTodoList = JSON.parse(localStorage.getItem('saved-items'))
+const savedWeatherData = JSON.parse(localStorage.getItem('saved-weather'));
 // JSON.parse => 원래 상태로 돌려서 불러올 수 있음
 
 // console.log(savedTodoList) // 저장되어 있는 문자열이 (객체형태로)출력됨 
@@ -82,11 +83,26 @@ if(savedTodoList) {
     }
 }
 
-// 사용자의 지역명을 ToDo에 넣어주기
+// 사용자의 지역명을 ToDo에 넣어주고 날씨에 맞는 배경화면 보여주기
 const weatherDataActive = function( { location, weather}) {
+    const weatherMAinList = [
+        'Clear',
+        'Clouds',
+        'Drizzle',
+        'Rain',
+        'Snow',
+        'Thunderstorm'
+    ];
+    // 우리가 가지고 있는 데이터일 경우 그대로 사용, 아닐 경우 'Fog'이미지 출력
+    weather = weatherMAinList.includes(weather) ? weather : 'Fog'
     const locationNameTag = document.querySelector('#location-name-tag');
     // console.log(locationNameTag)
-    locationNameTag.textContent = location
+    locationNameTag.textContent = location;
+    document.body.style.backgroundImage = `url('../images/${weather}.jpg')`
+
+    if (!savedWeatherData || savedWeatherData.location !== location || savedWeatherData.weather !== weather){
+        localStorage.setItem('saved-weather', JSON.stringify({ location, weather }));
+    }
 }
 
 // API를 이용하여 사용자의 지역 및 날씨 받아오기
@@ -100,10 +116,11 @@ const weatherSearch = function({ latitude, longitude }) {
             // JSON.Parse 사용안 한 경우 => 바디, 헤더까지 존재하는 경우 제대로 동작하지 안할 수도 있기 때문
         })
         .then((json) => {
-            console.log(json.name, json.weather[0].main);
+            // console.log(json.name, json.weather[0].main);
             const weatherData = {
                 location: json.name,
                 weather: json.weather[0].main
+                // weather:'Fog'
             }
             weatherDataActive(weatherData);
         })
@@ -135,20 +152,6 @@ askForLocation();
 
 // api key : f731029273cc96ab98ebf55cebf7ed93
 
-// const promiseTest = function() {
-//     return new Promise((resolver, reject) => {
-//         setTimeout(() => {
-//             resolver('success')
-//             // reject('error')
-//         }, 2000);
-//     })
-// }
-
-// promiseTest().then((res)=>{
-//     console.log(res)
-// })
-// // console.log(promiseTest());
-// // resolver(100)만 해놓은 경우 fulfilled 반환됨
-// // setTimeout 사용한 경우 pending 상태가 됨
-// // reject(100)한 경우 실패한 것을 말함
-// // then => promise 상태가 fulfilled가 된 후 실행되게 만듦
+if(savedWeatherData) {
+    weatherDataActive(savedWeatherData);
+ }
