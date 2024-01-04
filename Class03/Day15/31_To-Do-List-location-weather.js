@@ -82,9 +82,17 @@ if(savedTodoList) {
     }
 }
 
-const weatherSearch = function(position) {
+// 사용자의 지역명을 ToDo에 넣어주기
+const weatherDataActive = function( { location, weather}) {
+    const locationNameTag = document.querySelector('#location-name-tag');
+    // console.log(locationNameTag)
+    locationNameTag.textContent = location
+}
+
+// API를 이용하여 사용자의 지역 및 날씨 받아오기
+const weatherSearch = function({ latitude, longitude }) {
     const openWeatherRes = fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=f731029273cc96ab98ebf55cebf7ed93`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=f731029273cc96ab98ebf55cebf7ed93`
         )
         .then((res) => {
             // console.log(res.json())
@@ -92,7 +100,12 @@ const weatherSearch = function(position) {
             // JSON.Parse 사용안 한 경우 => 바디, 헤더까지 존재하는 경우 제대로 동작하지 안할 수도 있기 때문
         })
         .then((json) => {
-            console.log(json.name, json.weather[0].description);
+            console.log(json.name, json.weather[0].main);
+            const weatherData = {
+                location: json.name,
+                weather: json.weather[0].main
+            }
+            weatherDataActive(weatherData);
         })
         .catch((err) => {
             console.error(err)
@@ -101,11 +114,12 @@ const weatherSearch = function(position) {
 
 }
 
-const accessToGeo = function(position) {
-    // console.log(position.coords.latitude)
+const accessToGeo = function({coords}) {
+    const { latitude, longitude } = coords
+    // shorthand property
     const positionObj = {
-        latitude: position.coords.latitude, //위도
-        longitude: position.coords.longitude//경도
+        latitude, longitude//경도
+        // 객체의 키와 값이 같은 이름인 경우 : 생략 가능
     }
 
     // console.log(positionObj)
